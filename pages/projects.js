@@ -23,7 +23,7 @@ const Projects = () => (
         Projects
       </Heading>
 
-      <SimpleGrid columns={[0.5, 0.5, 1]} gap={16}>
+      <SimpleGrid columns={[0.5, 0.5, 1]} gap={10}>
         <Section>
           <WorkGridItem
             id="Spotify 2.0"

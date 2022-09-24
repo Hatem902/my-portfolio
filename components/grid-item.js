@@ -62,7 +62,7 @@ export const WorkGridItem = ({
   const [show, setShow] = useState(false)
   const handleToggle = () => setShow(!show)
   return (
-    <Box w="100%" textAlign="center" pb={showMoreHide && 4}>
+    <Box w="100%" textAlign="center">
       <LinkBox
         cursor="pointer "
         transition="ease"
