@@ -26,6 +26,8 @@ const Main = ({ children, router }) => {
         <meta property="og:site_name" content="Hatem Lamine" />
         <meta name="og:title" content="Hatem Lamine" />
         <meta property="og:type" content="website" />
+        <meta property="linkedin:image" content="/portfolio-thumbnail.png" />
+        <meta property="og:image" content="/portfolio-thumbnail.png" />
         <title>Hatem Lamine - Homepage</title>
       </Head>
 
