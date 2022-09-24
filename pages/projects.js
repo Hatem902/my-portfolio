@@ -14,6 +14,7 @@ import Section from '../components/section'
 import thumbCovidTracker from '../public/images/works/covid-tracker_eyecatch.png'
 import thumbNetflix from '../public/images/works/netflix_eyecatch.png'
 import thumbSpotify from '../public/images/works/spotify-eye-catch.png'
+import thumbPortfolio from '../public/images/works/portfolio-eye-catch.png'
 
 const Projects = () => (
   <Layout title="Projects">
@@ -128,6 +129,25 @@ const Projects = () => (
                   TMDB API
                 </Link>
                 · Recoil · Firebase · Stripe
+              </div>
+            </Flex>
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="Personal Portfolio"
+            title="Personal Portfolio"
+            thumbnail={thumbPortfolio}
+            link="http://hatem-lamine-portfolio.vercel.app/"
+            source="https://github.com/Hatem902/my-portfolio"
+            showMoreHide={true}
+          >
+            <Flex pt={1} justifyContent="center" textAlign="center">
+              <div>
+                <Badge colorScheme="teal" mb={1}>
+                  Tech{' '}
+                </Badge>{' '}
+                : Next.js · Chakra UI · Framer Motion · Three.js
               </div>
             </Flex>
           </WorkGridItem>

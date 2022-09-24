@@ -56,7 +56,8 @@ export const WorkGridItem = ({
   demo,
   featuresShowcase,
   link,
-  source
+  source,
+  showMoreHide
 }) => {
   const [show, setShow] = useState(false)
   const handleToggle = () => setShow(!show)
@@ -84,32 +85,40 @@ export const WorkGridItem = ({
           </Text>
         </LinkOverlay>
       </LinkBox>
-      <Collapse startingHeight={48} in={show}>
+      <Collapse startingHeight={!showMoreHide ? 48 : 28} in={show}>
         <Text fontSize={14} /* noOfLines={show ? 30 : 2} */>{children}</Text>
       </Collapse>
-      <Button
-        colorScheme="teal"
-        variant="outline"
-        size="xxs"
-        fontSize="md"
-        onClick={handleToggle}
-        pr={2}
-        pl={0.5}
-        pb={0.5}
+      {!showMoreHide && (
+        <Button
+          colorScheme="teal"
+          variant="outline"
+          size="xxs"
+          fontSize="md"
+          onClick={handleToggle}
+          pr={2}
+          pl={0.5}
+          pb={0.5}
+        >
+          {show ? (
+            <>
+              <ChevronUpIcon />
+              <Text fontSize="xs">Show less</Text>
+            </>
+          ) : (
+            <>
+              <ChevronDownIcon mt={0.5} />
+              <Text fontSize="xs">Show more</Text>
+            </>
+          )}
+        </Button>
+      )}
+      <Flex
+        pt={!showMoreHide ? 1 : 0}
+        align="center"
+        my={2}
+        gap={4}
+        justify="center"
       >
-        {show ? (
-          <>
-            <ChevronUpIcon />
-            <Text fontSize="xs">Show less</Text>
-          </>
-        ) : (
-          <>
-            <ChevronDownIcon mt={0.5} />
-            <Text fontSize="xs">Show more</Text>
-          </>
-        )}
-      </Button>
-      <Flex pt={2.5} align="center" my={2} justifyContent="space-around">
         {demo && (
           <Link href={demo} target="_blank">
             <Button size="sm" leftIcon={<IoLogoYoutube />} colorScheme="teal">
@@ -126,7 +135,7 @@ export const WorkGridItem = ({
         )}
         <Link href={link} passHref scroll={false} target="_blank">
           <Button size="sm" leftIcon={<LinkIcon />} colorScheme="teal">
-            Link
+            Website
           </Button>
         </Link>
         <Link href={source} passHref scroll={false} target="_blank">
