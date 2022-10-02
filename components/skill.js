@@ -1,4 +1,12 @@
-import { Button, Tooltip } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Flex,
+  Grid,
+  HStack,
+  Tooltip,
+  VStack
+} from '@chakra-ui/react'
 
 const Skill = ({ name, level }) => (
   <Tooltip
@@ -7,14 +15,16 @@ const Skill = ({ name, level }) => (
     }`}
     color={`${level >= 7.5 ? 'red' : level >= 6.5 ? 'blue' : 'teal'}`}
   >
-    <Button
-      cursor="default"
-      rounded="full"
-      variant="outline"
-      colorScheme={`${level >= 7.5 ? 'red' : level >= 6.5 ? 'blue' : 'teal'}`}
-    >
-      {name}&nbsp;&nbsp;|&nbsp;&nbsp;{level} / 10
-    </Button>
+    <Flex>
+      <Button
+        cursor="default"
+        rounded="full"
+        variant="outline"
+        colorScheme={`${level >= 7.5 ? 'red' : level >= 6.5 ? 'blue' : 'teal'}`}
+      >
+        {name}&nbsp;&nbsp;|&nbsp;&nbsp;{level} / 10
+      </Button>
+    </Flex>
   </Tooltip>
 )
 
