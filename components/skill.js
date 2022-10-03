@@ -17,6 +17,7 @@ const Skill = ({ name, level }) => (
   >
     <Flex>
       <Button
+        size="sm"
         cursor="default"
         rounded="full"
         variant="outline"

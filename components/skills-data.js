@@ -4,6 +4,10 @@ export const skills = [
     delay: 0.1,
     data: [
       {
+        name: 'TESTTESTTESTTESTTESTTESTTESTTESTTESTTEST',
+        level: '5'
+      },
+      {
         name: 'Next.js',
         level: '8'
       },
