@@ -135,7 +135,7 @@ export const WorkGridItem = ({
         {featuresShowcase && (
           <Link href={featuresShowcase} target="_blank">
             <Button size="sm" leftIcon={<IoLogoYoutube />} colorScheme="teal">
-              Features
+              Features Showcase
             </Button>
           </Link>
         )}
