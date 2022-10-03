@@ -7,7 +7,8 @@ import {
   Collapse,
   Button,
   Link,
-  Flex
+  Flex,
+  Divider
 } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import { useState } from 'react'
@@ -88,29 +89,33 @@ export const WorkGridItem = ({
       <Collapse startingHeight={!showMoreHide ? 48 : 28} in={show}>
         <Text fontSize={14} /* noOfLines={show ? 30 : 2} */>{children}</Text>
       </Collapse>
+
       {!showMoreHide && (
-        <Button
-          colorScheme="teal"
-          variant="outline"
-          size="xxs"
-          fontSize="md"
-          onClick={handleToggle}
-          pr={2}
-          pl={0.5}
-          pb={0.5}
-        >
-          {show ? (
-            <>
-              <ChevronUpIcon />
-              <Text fontSize="xs">Show less</Text>
-            </>
-          ) : (
-            <>
-              <ChevronDownIcon mt={0.5} />
-              <Text fontSize="xs">Show more</Text>
-            </>
-          )}
-        </Button>
+        <>
+          <Divider mb={1} />
+          <Button
+            colorScheme="teal"
+            variant="outline"
+            size="xxs"
+            fontSize="md"
+            onClick={handleToggle}
+            pr={2}
+            pl={0.5}
+            pb={0.5}
+          >
+            {show ? (
+              <>
+                <ChevronUpIcon />
+                <Text fontSize="xs">Show less</Text>
+              </>
+            ) : (
+              <>
+                <ChevronDownIcon mt={0.5} />
+                <Text fontSize="xs">Show more</Text>
+              </>
+            )}
+          </Button>
+        </>
       )}
       <Flex
         pt={!showMoreHide ? 1 : 0}
