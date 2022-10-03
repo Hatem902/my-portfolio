@@ -89,7 +89,7 @@ const Home = () => {
           </Heading>
           <Paragraph>
             I'm a full-stack software engineer based in Tunisa, with a passion
-            for Front-end web development.
+            for Front-end web development
             <br />
             Throughout my ever-lasting self-improvement journey, I aspire to
             expand my proactive mindset, my affinity for problem solving, my
