@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import dynamic from 'next/dynamic'
-import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
+import dynamic from 'next/dynamic'
+import Head from 'next/head'
 import Footer from '../footer'
+import NavBar from '../navbar'
 import VoxelDogLoader from '../voxel-dog-loader'
 
 const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {

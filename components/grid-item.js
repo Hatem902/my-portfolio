@@ -1,23 +1,18 @@
-import Image from 'next/image'
+import { ChevronDownIcon, ChevronUpIcon, LinkIcon } from '@chakra-ui/icons'
 import {
   Box,
-  Text,
+  Button,
+  Collapse,
+  Divider,
+  Flex,
+  Link,
   LinkBox,
   LinkOverlay,
-  Collapse,
-  Button,
-  Link,
-  Flex,
-  Divider
+  Text
 } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+import Image from 'next/image'
 import { useState } from 'react'
-import {
-  ChevronDownIcon,
-  ChevronRightIcon,
-  ChevronUpIcon,
-  LinkIcon
-} from '@chakra-ui/icons'
 import { IoLogoGithub, IoLogoYoutube } from 'react-icons/io5'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (

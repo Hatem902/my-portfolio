@@ -13,8 +13,8 @@ import Section from '../components/section'
 
 import thumbCovidTracker from '../public/images/works/covid-tracker_eyecatch.png'
 import thumbNetflix from '../public/images/works/netflix_eyecatch.png'
-import thumbSpotify from '../public/images/works/spotify-eye-catch.png'
 import thumbPortfolio from '../public/images/works/portfolio-eye-catch.png'
+import thumbSpotify from '../public/images/works/spotify-eye-catch.png'
 
 const Projects = () => (
   <Layout title="Projects">

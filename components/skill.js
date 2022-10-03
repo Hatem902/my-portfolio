@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Grid,
-  HStack,
-  Tooltip,
-  VStack
-} from '@chakra-ui/react'
+import { Button, Flex, Tooltip } from '@chakra-ui/react'
 
 const Skill = ({ name, level }) => (
   <Tooltip
