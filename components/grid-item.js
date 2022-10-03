@@ -86,13 +86,13 @@ export const WorkGridItem = ({
           </Text>
         </LinkOverlay>
       </LinkBox>
-      <Collapse startingHeight={!showMoreHide ? 48 : 28} in={show}>
+      <Collapse startingHeight={!showMoreHide ? 41 : 28} in={show}>
         <Text fontSize={14} /* noOfLines={show ? 30 : 2} */>{children}</Text>
       </Collapse>
 
       {!showMoreHide && (
         <>
-          <Divider mb={1} />
+          <Divider mb={0.5} mt={1.5} />
           <Button
             colorScheme="teal"
             variant="outline"
