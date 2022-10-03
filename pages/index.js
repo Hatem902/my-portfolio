@@ -125,8 +125,8 @@ const Home = () => {
               >
                 Keyrus Tunisia
               </Button>
-            </Link>{' '}
-            <p> - Frontend Web Developer </p>
+            </Link>
+            <p>|&nbsp;&nbsp;&nbsp;&nbsp;</p> <p>Frontend Web Developer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
@@ -157,7 +157,7 @@ const Home = () => {
                 UpKurs
               </Button>
             </Link>{' '}
-            <p> - Frontend Web Developer </p>
+            <p>|&nbsp;&nbsp;&nbsp;&nbsp;</p> <p>Frontend Web Developer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
@@ -197,7 +197,7 @@ const Home = () => {
         </Section>
 
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h3" variant="section-title" mb="2.5">
             On the web
           </Heading>
           <List>
@@ -228,7 +228,7 @@ const Home = () => {
             </ListItem>
           </List>
 
-          <SimpleGrid paddingTop={4} columns={[0.5, 1, 1]} gap={6}>
+          <SimpleGrid paddingTop={3} columns={[0.5, 1, 1]} gap={6}>
             <GridItem
               href="https://www.youtube.com/playlist?list=PLJ49vJop9dCb7H0oM_fc_BOuwrDlkKB_e"
               title="My Final Products' Demo Playlist"

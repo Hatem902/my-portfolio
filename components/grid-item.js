@@ -20,7 +20,7 @@ import {
 import { IoLogoGithub, IoLogoYoutube } from 'react-icons/io5'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
-  <Box mt={2} w="100%" textAlign="center">
+  <Box mt={0} w="100%" textAlign="center">
     <LinkBox
       cursor="pointer "
       transition="ease"
@@ -118,6 +118,7 @@ export const WorkGridItem = ({
         my={2}
         gap={4}
         justify="center"
+        wrap="wrap"
       >
         {demo && (
           <Link href={demo} target="_blank">
