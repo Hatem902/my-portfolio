@@ -10,7 +10,14 @@ const SkillSection = ({ delay, name, data }) => {
       <Heading mt={0} as="h3" variant="section-title" fontSize={20} mb={5}>
         {name}
       </Heading>
-      <Flex pl={4} pb={5} wrap="wrap" columnGap={4} rowGap={2}>
+      <Flex
+        pl={4}
+        pb={5}
+        wrap="wrap"
+        columnGap={4}
+        rowGap={2}
+        justify={['center', 'start', 'start', 'start']}
+      >
         {data.map(({ name, level }) => (
           <>
             <Skill name={name} level={level} key={name} />

@@ -17,7 +17,7 @@ const Skill = ({ name, level }) => (
   >
     <Flex>
       <Button
-        size="sm"
+        size={['sm', 'md', 'md', 'md']}
         cursor="default"
         rounded="full"
         variant="outline"

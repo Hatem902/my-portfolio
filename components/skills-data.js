@@ -4,10 +4,6 @@ export const skills = [
     delay: 0.1,
     data: [
       {
-        name: 'TESTTESTTESTTESTTESTTESTTESTTESTTESTTEST',
-        level: '5'
-      },
-      {
         name: 'Next.js',
         level: '8'
       },
@@ -136,38 +132,6 @@ export const skills = [
     delay: 0.3,
     data: [
       {
-        name: 'Design Patterns',
-        level: '7.5'
-      },
-      {
-        name: 'OOP',
-        level: '7.5'
-      },
-      {
-        name: 'UML',
-        level: '7.5'
-      },
-      {
-        name: 'Scrum & Agile (Jira)',
-        level: '7.5'
-      },
-      {
-        name: 'Algorithms & DS',
-        level: '7'
-      },
-      {
-        name: 'MVC',
-        level: '7'
-      },
-      {
-        name: 'Artificial Intelligence',
-        level: '4'
-      },
-      {
-        name: 'Theory of Languages',
-        level: '4'
-      }
-      /* {
         name: 'Design Patterns & GOF',
         level: '7.5'
       },
@@ -198,7 +162,7 @@ export const skills = [
       {
         name: 'Theory of Formal Languages',
         level: '4'
-      } */
+      }
     ]
   },
 
