@@ -22,7 +22,13 @@ const Skill = ({ name, level, badge }) => (
               label={`Passed LinkedIn Skill Assessment - Top ${badge}%`}
               color={`${level >= 7.5 ? 'red' : level >= 6.5 ? 'blue' : 'teal'}`}
             >
-              <Img src="/images/links/linkedin-badge.png" w="7" h="7" ml="3" />
+              <Img
+                src="/images/links/linkedin-badge.png"
+                w={[5, 7, 7, 7]}
+                h={[5, 7, 7, 7]}
+                ml={[3, 4, 4, 4]}
+                mb={0.5}
+              />
             </Tooltip>
           </p>
         )}
