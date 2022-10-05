@@ -13,7 +13,8 @@ export const skills = [
       },
       {
         name: 'React.js',
-        level: '8'
+        level: '8',
+        badge: 5
       },
       {
         name: 'Angular',
@@ -48,7 +49,8 @@ export const skills = [
     data: [
       {
         name: 'JavaScript',
-        level: '7.5'
+        level: '7.5',
+        badge: 30
       },
       {
         name: 'TypeScript',

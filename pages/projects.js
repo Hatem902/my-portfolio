@@ -53,7 +53,7 @@ const Projects = () => (
                 <Badge colorScheme="teal" mb={1}>
                   Tech{' '}
                 </Badge>{' '}
-                : Next.js · Chakra UI ·
+                : React.js · Next.js · Chakra UI ·
                 <Link
                   px={1}
                   href="https://developer.spotify.com/documentation/web-api/"
@@ -120,7 +120,7 @@ const Projects = () => (
                 <Badge colorScheme="teal" mb={1}>
                   Tech{' '}
                 </Badge>{' '}
-                : Next.js · TailwindCss · TypeScript ·
+                : React.js · Next.js · TailwindCss · TypeScript ·
                 <Link
                   px={1}
                   href="https://developers.themoviedb.org/3/trending/get-trending"
@@ -147,7 +147,7 @@ const Projects = () => (
                 <Badge colorScheme="teal" mb={1}>
                   Tech{' '}
                 </Badge>{' '}
-                : Next.js · Chakra UI · Framer Motion · Three.js
+                : React.js · Next.js · Chakra UI · Framer Motion · Three.js
               </div>
             </Flex>
           </WorkGridItem>

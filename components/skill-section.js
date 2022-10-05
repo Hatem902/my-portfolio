@@ -18,9 +18,9 @@ const SkillSection = ({ delay, name, data }) => {
         rowGap={2}
         justify={['center', 'start', 'start', 'start']}
       >
-        {data.map(({ name, level }) => (
+        {data.map(({ name, level, badge }) => (
           <>
-            <Skill name={name} level={level} key={name} />
+            <Skill name={name} level={level} key={name} badge={badge} />
           </>
         ))}
       </Flex>
