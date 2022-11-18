@@ -11,11 +11,11 @@ import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
+import thumbConvertly from '../public/images/works/convertly-eye-catch.png'
 import thumbCovidTracker from '../public/images/works/covid-tracker_eyecatch.png'
 import thumbNetflix from '../public/images/works/netflix_eyecatch.png'
 import thumbPortfolio from '../public/images/works/portfolio-eye-catch.png'
 import thumbSpotify from '../public/images/works/spotify-eye-catch.png'
-
 const Projects = () => (
   <Layout title="Projects">
     <Container>
@@ -31,6 +31,7 @@ const Projects = () => (
             thumbnail={thumbSpotify}
             demo="https://www.youtube.com/watch?v=Mb2SNHR5uNs&feature=youtu.be&ab_channel=IcyVeins"
             featuresShowcase="https://www.youtube.com/watch?v=mwd5kUdRO6s&feature=youtu.be"
+            design="https://www.behance.net/gallery/157371967/My-Design-of-Spotify"
             link="https://spotify-2-theta.vercel.app/"
             source="https://github.com/Hatem902/spotify-2"
           >
@@ -103,6 +104,7 @@ const Projects = () => (
             title="Netflix 2.0 ( Currently Under Development )"
             thumbnail={thumbNetflix}
             link="https://netflix-2-0-mu.vercel.app/"
+            howTo="https://github.com/Hatem902/netflix-2.0/blob/main/README.md"
             source="https://github.com/Hatem902/netflix-2.0"
           >
             A Netflix Clone using{' '}
@@ -129,6 +131,27 @@ const Projects = () => (
                   TMDB API
                 </Link>
                 · Recoil · Firebase · Stripe
+              </div>
+            </Flex>
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="Convertly"
+            title="Convertly ( Currently Under Development )"
+            thumbnail={thumbConvertly}
+            link="https://convertly.vercel.app/home"
+            source="https://github.com/Hatem902/convertly/"
+          >
+            A File Converter Web-App, to convert everything from documents &
+            images, to videos & sound, with 800+ supported formats, through a
+            modern & clean UI / UX Design that is made with attention to detail.
+            <Flex pt={1} justifyContent="center">
+              <div>
+                <Badge colorScheme="teal" mb={1}>
+                  Tech{' '}
+                </Badge>{' '}
+                : Angular · Python · FastAPI · TailwindCss
               </div>
             </Flex>
           </WorkGridItem>

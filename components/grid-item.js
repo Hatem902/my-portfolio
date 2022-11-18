@@ -13,7 +13,12 @@ import {
 import { Global } from '@emotion/react'
 import Image from 'next/image'
 import { useState } from 'react'
-import { IoLogoGithub, IoLogoYoutube } from 'react-icons/io5'
+import {
+  IoHelpSharp,
+  IoLogoBehance,
+  IoLogoGithub,
+  IoLogoYoutube
+} from 'react-icons/io5'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
   <Box mt={0} w="100%" textAlign="center">
@@ -46,14 +51,15 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 
 export const WorkGridItem = ({
   children,
-  id,
   title,
   thumbnail,
   demo,
   featuresShowcase,
   link,
+  howTo,
   source,
-  showMoreHide
+  showMoreHide,
+  design
 }) => {
   const [show, setShow] = useState(false)
   const handleToggle = () => setShow(!show)
@@ -134,11 +140,25 @@ export const WorkGridItem = ({
             </Button>
           </Link>
         )}
+        {design && (
+          <Link href={design} target="_blank">
+            <Button size="sm" leftIcon={<IoLogoBehance />} colorScheme="teal">
+              My UI / UX Design
+            </Button>
+          </Link>
+        )}
         <Link href={link} passHref scroll={false} target="_blank">
           <Button size="sm" leftIcon={<LinkIcon />} colorScheme="teal">
             Website
           </Button>
         </Link>
+        {howTo && (
+          <Link href={howTo} passHref scroll={false} target="_blank">
+            <Button size="sm" leftIcon={<IoHelpSharp />} colorScheme="teal">
+              How To Sign Up
+            </Button>
+          </Link>
+        )}
         <Link href={source} passHref scroll={false} target="_blank">
           <Button size="sm" leftIcon={<IoLogoGithub />} colorScheme="teal">
             Source

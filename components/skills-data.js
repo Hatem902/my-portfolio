@@ -5,11 +5,11 @@ export const skills = [
     data: [
       {
         name: 'Next.js',
-        level: '8'
+        level: '8.5'
       },
       {
         name: 'TailwindCss',
-        level: '8'
+        level: '8.5'
       },
       {
         name: 'React.js',
@@ -18,7 +18,7 @@ export const skills = [
       },
       {
         name: 'Angular',
-        level: '7'
+        level: '8'
       },
       {
         name: 'Nuxt.js 3',
@@ -49,15 +49,19 @@ export const skills = [
     data: [
       {
         name: 'JavaScript',
-        level: '7.5',
+        level: '8',
         badge: 30
       },
       {
         name: 'TypeScript',
-        level: '7.5'
+        level: '8'
       },
       {
         name: 'Css',
+        level: '8'
+      },
+      {
+        name: 'html',
         level: '7'
       },
       {
@@ -65,8 +69,8 @@ export const skills = [
         level: '7'
       },
       {
-        name: 'html',
-        level: '6.5'
+        name: 'Python',
+        level: '6'
       },
       {
         name: 'Node.js',
@@ -74,10 +78,6 @@ export const skills = [
       },
       {
         name: 'Java',
-        level: '5'
-      },
-      {
-        name: 'Python',
         level: '5'
       }
     ]
@@ -117,7 +117,7 @@ export const skills = [
       },
       {
         name: 'Framer Motion',
-        level: '6'
+        level: '7'
       },
       {
         name: 'Three.js',
@@ -133,6 +133,10 @@ export const skills = [
     name: 'Concepts',
     delay: 0.3,
     data: [
+      {
+        name: 'UX / UI Design',
+        level: '7.5'
+      },
       {
         name: 'Design Patterns & GOF',
         level: '7.5'
@@ -151,7 +155,7 @@ export const skills = [
       },
       {
         name: 'Algorithms & Data Structures',
-        level: '7'
+        level: '7.5'
       },
       {
         name: 'MVC',
@@ -172,6 +176,10 @@ export const skills = [
     name: 'Tools',
     delay: 0.3,
     data: [
+      {
+        name: 'Figma',
+        level: '8'
+      },
       {
         name: 'Git & Github',
         level: '8'
@@ -195,10 +203,6 @@ export const skills = [
       {
         name: 'Trello',
         level: '7'
-      },
-      {
-        name: 'Figma',
-        level: '6'
       }
     ]
   }
