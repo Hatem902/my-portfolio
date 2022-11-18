@@ -158,6 +158,10 @@ export const skills = [
         level: '7.5'
       },
       {
+        name: 'Debugging',
+        level: '7.5'
+      },
+      {
         name: 'MVC',
         level: '7'
       },

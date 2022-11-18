@@ -185,7 +185,14 @@ const Home = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Video-editing, Photography, UI / UX Design, Bodybuilding,{' '}
+            <Link
+              href="https://www.behance.net/gallery/157371967/My-Design-of-Spotify"
+              target="_blank"
+            >
+              {' '}
+              UI / UX Design
+            </Link>{' '}
+            , Video-editing, Photography, Bodybuilding,{' '}
             <Link
               href="https://www.youtube.com/watch?v=UntYS_X3iSM&list=PLJ49vJop9dCaDvzzX79cOCtCfpp7Ad7py&index=1&ab_channel=IcyVeins"
               target="_blank"

@@ -151,7 +151,7 @@ const Projects = () => (
                 <Badge colorScheme="teal" mb={1}>
                   Tech{' '}
                 </Badge>{' '}
-                : Angular · Python · FastAPI · TailwindCss
+                : Angular · Python · FastAPI · TailwindCss · TypeScript
               </div>
             </Flex>
           </WorkGridItem>
