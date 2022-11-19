@@ -134,7 +134,7 @@ export const skills = [
     delay: 0.3,
     data: [
       {
-        name: 'UX / UI Design',
+        name: 'UI / UX Design',
         level: '7.5'
       },
       {
