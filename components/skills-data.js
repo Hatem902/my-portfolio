@@ -166,6 +166,10 @@ export const skills = [
         level: '7'
       },
       {
+        name: 'Data Mining',
+        level: '5'
+      },
+      {
         name: 'Artificial Intelligence',
         level: '4'
       },
