@@ -12,7 +12,9 @@ const Description = ({ shownContent, hiddenContent }) => {
         <>
           <Collapse startingHeight={0} in={show}>
             {hiddenContent.map(contentItem => (
-              <Text mt={2}>{contentItem}</Text>
+              <Text mt={2} key={contentItem}>
+                {contentItem}
+              </Text>
             ))}
           </Collapse>
           <>
