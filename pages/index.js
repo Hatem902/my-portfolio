@@ -143,7 +143,7 @@ const Home = () => {
               <Button
                 as={Link}
                 leftIcon={<IoLogoLinkedin />}
-                mr={5}
+                mr={4}
                 px={0}
                 bgColor="transparent"
                 _hover={{ bgColor: 'transparent' }}
@@ -151,7 +151,7 @@ const Home = () => {
                 XQuant - Seoul, South Korea
               </Button>
             </Link>
-            <p>|&nbsp;&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
+            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
@@ -179,7 +179,7 @@ const Home = () => {
               <Button
                 as={Link}
                 leftIcon={<IoLogoLinkedin />}
-                mr={5}
+                mr={4}
                 px={0}
                 bgColor="transparent"
                 _hover={{ bgColor: 'transparent' }}
@@ -187,7 +187,7 @@ const Home = () => {
                 Keyrus - Tunis, Tunisia
               </Button>
             </Link>
-            <p>|&nbsp;&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
+            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
@@ -218,7 +218,7 @@ const Home = () => {
               <Button
                 as={Link}
                 leftIcon={<IoLogoLinkedin />}
-                mr={5}
+                mr={4}
                 px={0}
                 bgColor="transparent"
                 _hover={{ bgColor: 'transparent' }}
@@ -226,7 +226,7 @@ const Home = () => {
                 UpKurs - Tunis, Tunisia
               </Button>
             </Link>{' '}
-            <p>|&nbsp;&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
+            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
