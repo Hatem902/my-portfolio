@@ -1,51 +1,66 @@
 export const skills = [
   {
-    name: 'Frameworks',
+    name: 'My core tech stack',
     delay: 0.1,
     data: [
       {
-        name: 'Next.js',
-        level: '8.5'
+        name: 'Next.js 13',
+        level: '8'
       },
+
       {
-        name: 'TailwindCss',
-        level: '8.5'
-      },
-      {
-        name: 'React.js',
-        level: '8',
-        badge: 5
-      },
-      {
-        name: 'Angular',
+        name: 'TypeScript',
         level: '8'
       },
       {
-        name: 'Nuxt.js 3',
-        level: '7'
+        name: 'TailwindCSS',
+        level: '8'
       },
       {
-        name: 'Vue.js 3',
-        level: '7'
-      },
-      {
-        name: 'Nest.js',
-        level: '7'
-      },
-      {
-        name: 'Svelte Kit',
-        level: '5'
-      },
-      {
-        name: 'Svelte',
-        level: '5'
+        name: 'Vercel',
+        level: '7.5'
       }
     ]
   },
-
   {
-    name: 'Languages',
-    delay: 0.2,
+    name: 'Secondary Tech',
+    delay: 0.1,
+    data: [
+      {
+        name: 'PlanetScale',
+        level: '7.5'
+      },
+      {
+        name: 'SupaBase',
+        level: '7'
+      },
+      {
+        name: 'Prisma',
+        level: '7.5'
+      },
+      {
+        name: 'Zod',
+        level: '7'
+      },
+      {
+        name: "Radix UI & Shadcn's UI or Headless UI",
+        level: '7.5'
+      },
+
+      {
+        name: 'NextAuth.js (Auth.js now)',
+        level: '7.5'
+      },
+
+      {
+        name: 'Upstash',
+        level: '7'
+      }
+    ]
+  },
+  {
+    name: 'Basic tools',
+    delay: 0.3,
     data: [
       {
         name: 'JavaScript',
@@ -53,8 +68,9 @@ export const skills = [
         badge: 30
       },
       {
-        name: 'TypeScript',
-        level: '8'
+        name: 'React.js',
+        level: '8',
+        badge: 5
       },
       {
         name: 'Css',
@@ -62,70 +78,121 @@ export const skills = [
       },
       {
         name: 'html',
+        level: '7.5'
+      },
+      {
+        name: 'Bash',
         level: '7'
       },
       {
-        name: 'C++',
-        level: '7'
-      },
-      {
-        name: 'Python',
-        level: '6'
-      },
-      {
-        name: 'Node.js',
-        level: '5'
-      },
-      {
-        name: 'Java',
-        level: '5'
-      }
-    ]
-  },
-
-  {
-    name: 'More Tech',
-    delay: 0.3,
-    data: [
-      {
-        name: 'APIs / REST APIs',
+        name: 'Git & Github',
         level: '8'
       },
       {
-        name: 'SQL',
+        name: 'Gitlab',
+        level: '8'
+      }
+    ]
+  },
+  {
+    name: 'Futuristic tech interests',
+    delay: 0.1,
+    data: [
+      {
+        name: 'AWS',
+        level: '5'
+      },
+
+      {
+        name: 'Terraform',
+        level: '2'
+      },
+      {
+        name: 'Axiom',
+        level: '3'
+      },
+
+      {
+        name: 'Drizzle ORM',
+        level: '2'
+      },
+      {
+        name: 'Astro (for rich static sites)',
+        level: '4'
+      },
+      {
+        name: 'Solid Start',
+        level: '3'
+      },
+      {
+        name: 'tRPC',
+        level: '3'
+      }
+    ]
+  },
+  {
+    name: "Other tech I've used in the past",
+    delay: 0.1,
+    data: [
+      {
+        name: 'Angular',
         level: '7.5'
       },
       {
-        name: 'Firebase',
+        name: 'Vue.js 3',
         level: '7.5'
       },
       {
-        name: 'Chakra UI',
+        name: 'Nuxt.js 3',
         level: '7.5'
       },
       {
-        name: 'Supabase',
+        name: 'Framer Motion',
+        level: '7.5'
+      },
+      {
+        name: 'Svelte Kit',
+        level: '5'
+      },
+      {
+        name: 'Nest.js',
         level: '7'
       },
       {
-        name: 'Ant Design',
+        name: 'Figma',
+        level: '7.5'
+      },
+      {
+        name: 'Node.js',
         level: '7'
+      },
+      {
+        name: 'Zustand / Recoil / Redux',
+        level: '8'
       },
       {
         name: 'Stripe',
         level: '7'
       },
       {
-        name: 'Framer Motion',
-        level: '7'
+        name: 'SQL',
+        level: '7.5'
+      },
+      {
+        name: 'Chakra UI / Ant Design / MUI / Mantine UI',
+        level: '7.5'
       },
       {
         name: 'Three.js',
         level: '4'
       },
       {
-        name: 'AWS',
-        level: '4'
+        name: 'Java',
+        level: '5'
+      },
+      {
+        name: 'Python',
+        level: '6.5'
       }
     ]
   },
@@ -133,6 +200,14 @@ export const skills = [
     name: 'Concepts',
     delay: 0.3,
     data: [
+      {
+        name: 'APIs / REST APIs',
+        level: '8'
+      },
+      {
+        name: 'Http Requests / Responses',
+        level: '8'
+      },
       {
         name: 'UI / UX Design',
         level: '7.5'
@@ -142,23 +217,21 @@ export const skills = [
         level: '7.5'
       },
       {
-        name: 'OOP',
+        name: 'Algorithms & Data Structures',
         level: '7.5'
       },
+
       {
         name: 'UML',
         level: '7.5'
       },
+
       {
-        name: 'Scrum & Agile Development ( Jira )',
+        name: 'OOP',
         level: '7.5'
       },
       {
-        name: 'Algorithms & Data Structures',
-        level: '7.5'
-      },
-      {
-        name: 'Debugging',
+        name: 'Scrum & Agile Dev',
         level: '7.5'
       },
       {
@@ -166,51 +239,8 @@ export const skills = [
         level: '7'
       },
       {
-        name: 'Data Mining',
-        level: '5'
-      },
-      {
-        name: 'Artificial Intelligence',
-        level: '4'
-      },
-      {
-        name: 'Theory of Formal Languages',
-        level: '4'
-      }
-    ]
-  },
-
-  {
-    name: 'Tools',
-    delay: 0.3,
-    data: [
-      {
-        name: 'Figma',
-        level: '8'
-      },
-      {
-        name: 'Git & Github',
-        level: '8'
-      },
-      {
-        name: 'Zustand',
-        level: '8'
-      },
-      {
-        name: 'Recoil',
-        level: '8'
-      },
-      {
-        name: 'Pinia',
-        level: '8'
-      },
-      {
-        name: 'Bash',
-        level: '7'
-      },
-      {
-        name: 'Trello',
-        level: '7'
+        name: 'Debugging',
+        level: '7.5'
       }
     ]
   }

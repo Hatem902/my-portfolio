@@ -3,8 +3,8 @@ import {
   Badge,
   Box,
   Button,
-  chakra,
   Container,
+  Divider,
   Flex,
   Heading,
   Link,
@@ -12,17 +12,20 @@ import {
   ListItem,
   SimpleGrid,
   Text,
+  Tooltip,
+  chakra,
   useColorModeValue
 } from '@chakra-ui/react'
 import Image from 'next/image'
 import NextLink from 'next/link'
 import { useState } from 'react'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import Description from '../components/description'
 import { GridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
-import thumbYouTube from '../public/images/links/youtube1.png'
+import thumbSimilarity from '../public/images/works/similarity-api-eye-catch.png'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -43,7 +46,8 @@ const Home = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
         >
-          Hello, I&apos;m a full-stack software engineer based in Tunisia!
+          Hello, I&apos;m a full-stack software engineer / modern tech
+          enthusiast
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -52,8 +56,26 @@ const Home = () => {
               Hatem Lamine
             </Heading>
             <p>
-              Software Engineering – National Institute of Applied Science and
-              Technology ( INSAT )
+              Full-stack software engineer
+              <Link
+                px={1}
+                href="https://www.linkedin.com/company/xquant/videos/"
+                target="_blank"
+              >
+                @ XQuant – Korea
+              </Link>{' '}
+            </p>
+            <p>
+              Software engineering student{' '}
+              <Tooltip
+                label="National Institute of Applied Science and Technology"
+                color={'teal'}
+              >
+                <Text as="span" cursor="default">
+                  {' '}
+                  @ Insat
+                </Text>
+              </Tooltip>
             </p>
           </Box>
           <Box
@@ -88,15 +110,15 @@ const Home = () => {
             Profile
           </Heading>
           <Paragraph>
-            I'm a full-stack software engineer based in Tunisa, with a passion
-            for Front-end web development and a lot of enthusiasm for modern UI
-            / UX Design.
-            <br />
+            I'm a full-stack software engineer, with an enthusiasm for modern
+            front & back web development, and an evolving vision for clean
+            modern UI / UX Design.
+            {/* <br />
             Throughout my ever-lasting self-improvement journey, I aspire to
             expand my proactive mindset, my affinity for problem solving, my
             avidity for picking up new skills and exploring uncharted contexts,
             as well as, sharpen my ability to produce content with attention to
-            detail.
+            detail. */}
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/skills" passHref scroll={false}>
@@ -115,23 +137,61 @@ const Home = () => {
           <Flex fontWeight="bold" alignItems="center" pt={2}>
             {' '}
             <Link
+              href="https://www.linkedin.com/company/xquant/videos/"
+              target="_blank"
+            >
+              <Button
+                as={Link}
+                leftIcon={<IoLogoLinkedin />}
+                mr={5}
+                px={0}
+                bgColor="transparent"
+                _hover={{ bgColor: 'transparent' }}
+              >
+                XQuant - Seoul, South Korea
+              </Button>
+            </Link>
+            <p>|&nbsp;&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
+          </Flex>
+
+          <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
+            Full-time · Sept 2022 -{' '}
+            <Text as="span" color="green.400">
+              Currently employed
+            </Text>
+          </Text>
+
+          <div>
+            <Badge colorScheme="teal" mb={1}>
+              Tech{' '}
+            </Badge>{' '}
+            : Next.js · React.js · TypeScript · TailwindCSS
+          </div>
+          <Description shownContent="• Currently collaborating alongside other developers, product managers and designers to build a full-stack contract management software." />
+          <Divider mt={1} mb={1.5} />
+
+          <Flex fontWeight="bold" alignItems="center" pt={2}>
+            {' '}
+            <Link
               href="https://www.linkedin.com/company/keyrus/"
               target="_blank"
             >
               <Button
-                variant="ghost"
-                colorScheme="teal"
+                as={Link}
                 leftIcon={<IoLogoLinkedin />}
-                mr={1}
+                mr={5}
+                px={0}
+                bgColor="transparent"
+                _hover={{ bgColor: 'transparent' }}
               >
-                Keyrus Tunisia
+                Keyrus - Tunis, Tunisia
               </Button>
             </Link>
-            <p>|&nbsp;&nbsp;&nbsp;&nbsp;</p> <p>Frontend Web Developer</p>
+            <p>|&nbsp;&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Internship · Jul 2022 - Aug 2022
+            Full-time · May 2022 - Aug 2022
           </Text>
 
           <div>
@@ -140,8 +200,14 @@ const Home = () => {
             </Badge>{' '}
             : Vue.js 3 · Nuxt.js 3 · Ant Design-Vue 3 · TypeScript
           </div>
-
-          <br />
+          <Description
+            shownContent="• My work was critical in the migration of an expense management solution from Nuxt.js 2 to Nuxt.js 3."
+            hiddenContent={[
+              "• Accelerated the company's migration process by migrating numerous plugins, libraries, and dependencies, including Ant Design Vue 3, VueQuill 3, Quill Image Uploader, Pinia, etc.",
+              '• Initiated and guided the incorporation of new Vue.js 3 features into the solution.',
+              '• Leveled up the user experience by contributing to the prevention and resolution of bugs before they were shipped to production.'
+            ]}
+          />
 
           <Flex fontWeight="bold" alignItems="center">
             {' '}
@@ -150,27 +216,36 @@ const Home = () => {
               target="_blank"
             >
               <Button
-                variant="ghost"
-                colorScheme="teal"
+                as={Link}
                 leftIcon={<IoLogoLinkedin />}
-                mr={1}
+                mr={5}
+                px={0}
+                bgColor="transparent"
+                _hover={{ bgColor: 'transparent' }}
               >
-                UpKurs
+                UpKurs - Tunis, Tunisia
               </Button>
             </Link>{' '}
-            <p>|&nbsp;&nbsp;&nbsp;&nbsp;</p> <p>Frontend Web Developer</p>
+            <p>|&nbsp;&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Internship · May 2022 - Jun 2022
+            Full-time · Jan 2022 - Apr 2022
           </Text>
 
           <div>
             <Badge colorScheme="teal" mb={1}>
               Tech{' '}
             </Badge>{' '}
-            : Angular · Css · TypeScript · Jira · Trello · Figma
+            : Angular · TypeScript · CSS · Nest.js · Figma
           </div>
+          <Description
+            shownContent="• Originally hired to contribute to the development of a pedagogical platform for videoconferencing, I quickly ended up becoming a driving force in various areas including Frontend, Backend, and UI/UX Design."
+            hiddenContent={[
+              '• I frequently shared my vision with the UI/UX design team from both the designer and developer perspectives to ensure optimal UI/UX, app responsiveness, and a seamless build process.',
+              '• My contribution within the digital team was crucial in building, debugging, and maintaining fully functional parts of the UI/UX materials, as well as setting up backend endpoints.'
+            ]}
+          />
           <Box align="center" my={4} mt={8}>
             <NextLink href="/projects" passHref scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -239,8 +314,8 @@ const Home = () => {
           <SimpleGrid paddingTop={3} columns={[0.5, 1, 1]} gap={6}>
             <GridItem
               href="https://www.youtube.com/playlist?list=PLJ49vJop9dCb7H0oM_fc_BOuwrDlkKB_e"
-              title="My Final Products' Demo Playlist"
-              thumbnail={thumbYouTube}
+              title="Playlist of Demos for My Products"
+              thumbnail={thumbSimilarity}
             ></GridItem>
           </SimpleGrid>
         </Section>

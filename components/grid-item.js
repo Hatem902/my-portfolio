@@ -59,7 +59,8 @@ export const WorkGridItem = ({
   howTo,
   source,
   showMoreHide,
-  design
+  design,
+  tech
 }) => {
   const [show, setShow] = useState(false)
   const handleToggle = () => setShow(!show)
@@ -74,7 +75,7 @@ export const WorkGridItem = ({
           opacity: '72%'
         }}
       >
-        <LinkOverlay href={link} target="_blank">
+        <LinkOverlay href={link || demo} target="_blank">
           <Image
             src={thumbnail}
             alt={title}
@@ -87,8 +88,11 @@ export const WorkGridItem = ({
           </Text>
         </LinkOverlay>
       </LinkBox>
-      <Collapse startingHeight={!showMoreHide ? 41 : 28} in={show}>
-        <Text fontSize={14} /* noOfLines={show ? 30 : 2} */>{children}</Text>
+      <Text fontSize={14}>{tech}</Text>
+      <Collapse startingHeight={!showMoreHide ? 4 : 6} in={show}>
+        <Text fontSize={14} pt={1.5} /* noOfLines={show ? 30 : 2} */>
+          {children}
+        </Text>
       </Collapse>
 
       {!showMoreHide && (
@@ -147,11 +151,13 @@ export const WorkGridItem = ({
             </Button>
           </Link>
         )}
-        <Link href={link} passHref scroll={false} target="_blank">
-          <Button size="sm" leftIcon={<LinkIcon />} colorScheme="teal">
-            Website
-          </Button>
-        </Link>
+        {link && (
+          <Link href={link} passHref scroll={false} target="_blank">
+            <Button size="sm" leftIcon={<LinkIcon />} colorScheme="teal">
+              Website
+            </Button>
+          </Link>
+        )}
         {howTo && (
           <Link href={howTo} passHref scroll={false} target="_blank">
             <Button size="sm" leftIcon={<IoHelpSharp />} colorScheme="teal">
