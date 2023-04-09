@@ -205,7 +205,7 @@ const Home = () => {
             hiddenContent={[
               "• Accelerated the company's migration process by migrating numerous plugins, libraries, and dependencies, including Ant Design Vue 3, VueQuill 3, Quill Image Uploader, Pinia, etc.",
               '• Initiated and guided the incorporation of new Vue.js 3 features into the solution.',
-              '• Leveled up the user experience by contributing to the prevention and resolution of bugs before they were shipped to production.'
+              '• Leveled up the user experience by contributing to the prevention and resolution of 10+ bugs before they were shipped to production.'
             ]}
           />
 
@@ -243,7 +243,7 @@ const Home = () => {
             shownContent="• Originally hired to contribute to the development of a pedagogical platform for videoconferencing, I quickly ended up becoming a driving force in various areas including Frontend, Backend, and UI/UX Design."
             hiddenContent={[
               '• I frequently shared my vision with the UI/UX design team from both the designer and developer perspectives to ensure optimal UI/UX, app responsiveness, and a seamless build process.',
-              '• My contribution within the digital team was crucial in building, debugging, and maintaining fully functional parts of the UI/UX materials, as well as setting up backend endpoints.'
+              '• My contribution within the digital team was crucial in building, debugging, and maintaining fully functional features covering over 40% of the entire UI/UX material. Additionally, I was responsible for setting up backend endpoints for the features that I maintained.'
             ]}
           />
           <Box align="center" my={4} mt={8}>
