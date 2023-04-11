@@ -32,16 +32,21 @@ export const skills = [
       },
       {
         name: 'SupaBase',
-        level: '7'
+        level: '7.5'
+      },
+      {
+        name: 'Upstash',
+        level: '7.5'
+      },
+      {
+        name: 'Redis',
+        level: '7.5'
       },
       {
         name: 'Prisma',
         level: '7.5'
       },
-      {
-        name: 'Zod',
-        level: '7'
-      },
+
       {
         name: "Radix UI & Shadcn's UI or Headless UI",
         level: '7.5'
@@ -51,9 +56,8 @@ export const skills = [
         name: 'NextAuth.js (Auth.js now)',
         level: '7.5'
       },
-
       {
-        name: 'Upstash',
+        name: 'Zod',
         level: '7'
       }
     ]
@@ -210,6 +214,14 @@ export const skills = [
       },
       {
         name: 'UI / UX Design',
+        level: '7.5'
+      },
+      {
+        name: 'Cross-browser compatibility and accessibility',
+        level: '7.5'
+      },
+      {
+        name: 'Software Architecture',
         level: '7.5'
       },
       {
