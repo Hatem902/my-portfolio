@@ -110,7 +110,7 @@ const Home = () => {
             Profile
           </Heading>
           <Paragraph>
-            I am a full-stack software engineer who is passionate about creating
+            I am a full-stack software engineer who is passionate about building
             and shipping high-quality software with exceptional user
             experiences.
             {/* <br />
