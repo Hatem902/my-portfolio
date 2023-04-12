@@ -110,9 +110,9 @@ const Home = () => {
             Profile
           </Heading>
           <Paragraph>
-            I'm a full-stack software engineer, with an enthusiasm for modern
-            front & back web development, and an evolving vision for clean
-            modern UI / UX Design.
+            I am a full-stack software engineer who is passionate about creating
+            and shipping high-quality software with exceptional user
+            experiences.
             {/* <br />
             Throughout my ever-lasting self-improvement journey, I aspire to
             expand my proactive mindset, my affinity for problem solving, my
