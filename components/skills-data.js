@@ -43,6 +43,10 @@ export const skills = [
         level: '7.5'
       },
       {
+        name: 'SQL',
+        level: '7.5'
+      },
+      {
         name: 'Prisma',
         level: '7.5'
       },
@@ -178,10 +182,7 @@ export const skills = [
         name: 'Stripe',
         level: '7'
       },
-      {
-        name: 'SQL',
-        level: '7.5'
-      },
+
       {
         name: 'Chakra UI / Ant Design / MUI / Mantine UI',
         level: '7.5'
