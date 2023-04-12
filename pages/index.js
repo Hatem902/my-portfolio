@@ -111,8 +111,8 @@ const Home = () => {
           </Heading>
           <Paragraph>
             I am a full-stack software engineer who is passionate about building
-            and shipping high-quality software with exceptional user
-            experiences.
+            and shipping high-quality software that scales, with a focus on
+            delivering exceptional user experiences.
             {/* <br />
             Throughout my ever-lasting self-improvement journey, I aspire to
             expand my proactive mindset, my affinity for problem solving, my
