@@ -10,17 +10,18 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
+  Spacer,
   Stack,
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { IoLogoGithub, IoMailOpen } from 'react-icons/io5'
+import { IoDownloadOutline, IoLogoGithub, IoMailOpen } from 'react-icons/io5'
 import Logo from './logo'
 import ThemeToggleButton from './theme-toggle-button'
-
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
@@ -37,6 +38,24 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 }
 
 const Navbar = props => {
+  const downloadResume = async () => {
+    try {
+      const response = await fetch(
+        '/HatemLamine_FullstackSoftwareEngineer_Resume.pdf'
+      )
+      const blob = await response.blob()
+      const url = URL.createObjectURL(blob)
+      const link = document.createElement('a')
+      link.href = url
+      link.download = 'HatemLamine_FullstackSoftwareEngineer_Resume.pdf'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+      URL.revokeObjectURL(url)
+    } catch (error) {
+      console.error(error)
+    }
+  }
   const { path } = props
   const mailTo = (email, subject, body) => {
     return `mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${
@@ -82,19 +101,7 @@ const Navbar = props => {
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
-
-          <LinkItem
-            target="_blank"
-            href="https://github.com/Hatem902/my-portfolio"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <IoLogoGithub />
-            Source
-          </LinkItem>
+          <Spacer />
           <LinkItem
             target="_blank"
             href={mailMe}
@@ -106,6 +113,30 @@ const Navbar = props => {
           >
             <IoMailOpen />
             Contact
+          </LinkItem>
+          <LinkItem
+            href="#"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+            onClick={downloadResume}
+          >
+            <IoDownloadOutline />
+            Resume
+          </LinkItem>
+          <LinkItem
+            target="_blank"
+            href="https://github.com/Hatem902/my-portfolio"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub />
+            Source
           </LinkItem>
         </Stack>
 
@@ -131,12 +162,18 @@ const Navbar = props => {
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
 
+                <MenuItem as={Link} href={mailMe} target="_blank">
+                  Contact
+                </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://github.com/Hatem902/my-portfolio"
                   target="_blank"
                 >
                   View Source
+                </MenuItem>
+                <MenuItem as={Link} href="#" onClick={downloadResume}>
+                  Resume
                 </MenuItem>
               </MenuList>
             </Menu>
