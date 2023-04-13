@@ -61,6 +61,10 @@ export const skills = [
         level: '7.5'
       },
       {
+        name: 'OpenAI',
+        level: '7'
+      },
+      {
         name: 'Zod',
         level: '7'
       }
@@ -226,9 +230,14 @@ export const skills = [
         level: '7.5'
       },
       {
+        name: 'Prompt engineering',
+        level: '8'
+      },
+      {
         name: 'Design Patterns & GOF',
         level: '7.5'
       },
+
       {
         name: 'Algorithms & Data Structures',
         level: '7.5'
