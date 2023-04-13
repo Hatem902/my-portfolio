@@ -257,6 +257,15 @@ const Home = () => {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
+            Languages
+          </Heading>
+          <Paragraph>
+            French, Arabic, English – Professional proficiency or above
+          </Paragraph>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
           <Paragraph>
