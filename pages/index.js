@@ -66,7 +66,7 @@ const Home = () => {
               </Link>{' '}
             </p>
             <p>
-              Software engineering student{' '}
+              Senior software engineering student{' '}
               <Tooltip
                 label="National Institute of Applied Science and Technology"
                 color={'teal'}
