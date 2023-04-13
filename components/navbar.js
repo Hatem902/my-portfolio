@@ -14,7 +14,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoMailOpen } from 'react-icons/io5'
 import Logo from './logo'
 import ThemeToggleButton from './theme-toggle-button'
 
@@ -38,7 +38,12 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
-
+  const mailTo = (email, subject, body) => {
+    return `mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${
+      encodeURIComponent(body) || ''
+    }`
+  }
+  const mailMe = mailTo('hatemlaminee@gmail.com', 'Subject💡', 'Body 👋')
   return (
     <Box
       position="fixed"
@@ -89,6 +94,18 @@ const Navbar = props => {
           >
             <IoLogoGithub />
             Source
+          </LinkItem>
+          <LinkItem
+            target="_blank"
+            href={mailMe}
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoMailOpen />
+            Contact
           </LinkItem>
         </Stack>
 
