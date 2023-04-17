@@ -65,6 +65,14 @@ export const skills = [
         level: '7'
       },
       {
+        name: 'Strapi',
+        level: '6'
+      },
+      {
+        name: 'React Query',
+        level: '7'
+      },
+      {
         name: 'Zod',
         level: '7'
       }
@@ -226,12 +234,20 @@ export const skills = [
         level: '7.5'
       },
       {
+        name: 'SEO optimization',
+        level: '7'
+      },
+      {
         name: 'Software Architecture',
         level: '7.5'
       },
       {
         name: 'Prompt engineering',
         level: '8'
+      },
+      {
+        name: 'Headless CMS',
+        level: '7'
       },
       {
         name: 'Design Patterns & GOF',
