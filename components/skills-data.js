@@ -7,7 +7,11 @@ export const skills = [
         name: 'Next.js 13',
         level: '8'
       },
-
+      {
+        name: 'React.js',
+        level: '8',
+        badge: 5
+      },
       {
         name: 'TypeScript',
         level: '8'
@@ -79,7 +83,7 @@ export const skills = [
     ]
   },
   {
-    name: 'Basic tools',
+    name: 'Essentials',
     delay: 0.3,
     data: [
       {
@@ -88,9 +92,9 @@ export const skills = [
         badge: 30
       },
       {
-        name: 'React.js',
+        name: 'Node.js',
         level: '8',
-        badge: 5
+        badge: 30
       },
       {
         name: 'Css',
