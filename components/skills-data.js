@@ -61,6 +61,10 @@ export const skills = [
         level: '7.5'
       },
       {
+        name: 'Clerk',
+        level: '7.5'
+      },
+      {
         name: 'OpenAI',
         level: '7'
       },
