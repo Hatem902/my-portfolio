@@ -19,10 +19,6 @@ export const skills = [
       {
         name: 'TailwindCSS',
         level: '8'
-      },
-      {
-        name: 'Vercel',
-        level: '7.5'
       }
     ]
   },
@@ -79,6 +75,18 @@ export const skills = [
       {
         name: 'Zod',
         level: '7'
+      },
+      {
+        name: 'Vercel',
+        level: '7.5'
+      },
+      {
+        name: 'AWS Lambda',
+        level: '7.5'
+      },
+      {
+        name: 'AWS Amplify',
+        level: '7.5'
       }
     ]
   },
@@ -97,11 +105,11 @@ export const skills = [
         badge: 30
       },
       {
-        name: 'Css',
+        name: 'CSS',
         level: '8'
       },
       {
-        name: 'html',
+        name: 'HTML',
         level: '7.5'
       },
       {
