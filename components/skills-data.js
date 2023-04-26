@@ -144,6 +144,10 @@ export const skills = [
         level: '2'
       },
       {
+        name: 'MongoDB',
+        level: '5'
+      },
+      {
         name: 'Axiom',
         level: '3'
       },
