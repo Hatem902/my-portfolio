@@ -31,11 +31,7 @@ export const skills = [
         level: '7.5'
       },
       {
-        name: 'SupaBase',
-        level: '7.5'
-      },
-      {
-        name: 'Upstash',
+        name: 'SQL',
         level: '7.5'
       },
       {
@@ -43,7 +39,11 @@ export const skills = [
         level: '7.5'
       },
       {
-        name: 'SQL',
+        name: 'SupaBase',
+        level: '7.5'
+      },
+      {
+        name: 'Upstash',
         level: '7.5'
       },
       {
@@ -204,10 +204,10 @@ export const skills = [
       },
       {
         name: 'Node.js',
-        level: '7'
+        level: '8'
       },
       {
-        name: 'Zustand / Recoil / Redux',
+        name: 'Zustand / Recoil / Redux / Context API',
         level: '8'
       },
       {
