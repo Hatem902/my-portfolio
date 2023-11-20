@@ -17,7 +17,8 @@ import {
   IoHelpSharp,
   IoLogoBehance,
   IoLogoGithub,
-  IoLogoYoutube
+  IoLogoYoutube,
+  IoStatsChart
 } from 'react-icons/io5'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
@@ -60,7 +61,9 @@ export const WorkGridItem = ({
   source,
   showMoreHide,
   design,
-  tech
+  tech,
+  isStartUp,
+  webVitals
 }) => {
   const [show, setShow] = useState(false)
   const handleToggle = () => setShow(!show)
@@ -131,28 +134,45 @@ export const WorkGridItem = ({
         wrap="wrap"
       >
         {demo && (
-          <Link href={demo} target="_blank">
+          <Link href={demo} target="_blank" order={isStartUp ? 3 : 1}>
             <Button size="sm" leftIcon={<IoLogoYoutube />} colorScheme="teal">
               Demo
             </Button>
           </Link>
         )}
         {featuresShowcase && (
-          <Link href={featuresShowcase} target="_blank">
+          <Link
+            href={featuresShowcase}
+            target="_blank"
+            order={isStartUp ? 4 : 2}
+          >
             <Button size="sm" leftIcon={<IoLogoYoutube />} colorScheme="teal">
               Features Showcase
             </Button>
           </Link>
         )}
         {design && (
-          <Link href={design} target="_blank">
+          <Link href={design} target="_blank" order={isStartUp ? 6 : 4}>
             <Button size="sm" leftIcon={<IoLogoBehance />} colorScheme="teal">
               My UI / UX Design
             </Button>
           </Link>
         )}
+        {webVitals && (
+          <Link href={webVitals} target="_blank" order={isStartUp ? 5 : 3}>
+            <Button size="sm" leftIcon={<IoStatsChart />} colorScheme="teal">
+              Web Vitals
+            </Button>
+          </Link>
+        )}
         {link && (
-          <Link href={link} passHref scroll={false} target="_blank">
+          <Link
+            href={link}
+            passHref
+            scroll={false}
+            target="_blank"
+            order={isStartUp ? 1 : 3}
+          >
             <Button size="sm" leftIcon={<LinkIcon />} colorScheme="teal">
               Website
             </Button>
@@ -165,7 +185,7 @@ export const WorkGridItem = ({
             </Button>
           </Link>
         )}
-        <Link href={source} passHref scroll={false} target="_blank">
+        <Link href={source} passHref scroll={false} target="_blank" order={2}>
           <Button size="sm" leftIcon={<IoLogoGithub />} colorScheme="teal">
             Source
           </Button>

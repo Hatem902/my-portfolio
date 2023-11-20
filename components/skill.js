@@ -3,9 +3,9 @@ import { Button, Flex, Img, Tooltip } from '@chakra-ui/react'
 const Skill = ({ name, level, badge }) => (
   <Tooltip
     label={`${
-      level >= 7.5 ? 'Proficient' : level >= 6.5 ? 'Decent' : 'Familiar'
+      level >= 8.5 ? 'Proficient' : level >= 6.5 ? 'Decent' : 'Familiar'
     }`}
-    color={`${level >= 7.5 ? 'red' : level >= 6.5 ? 'blue' : 'teal'}`}
+    color={`${level >= 8.5 ? 'red' : level >= 6.5 ? 'blue' : 'teal'}`}
   >
     <Flex>
       <Button
@@ -13,14 +13,14 @@ const Skill = ({ name, level, badge }) => (
         cursor="default"
         rounded="full"
         variant="outline"
-        colorScheme={`${level >= 7.5 ? 'red' : level >= 6.5 ? 'blue' : 'teal'}`}
+        colorScheme={`${level >= 8.5 ? 'red' : level >= 6.5 ? 'blue' : 'teal'}`}
       >
         {name}&nbsp;&nbsp;|&nbsp;&nbsp;{level} / 10
         {badge && (
           <p>
             <Tooltip
               label={`Passed LinkedIn Skill Assessment - Top ${badge}%`}
-              color={`${level >= 7.5 ? 'red' : level >= 6.5 ? 'blue' : 'teal'}`}
+              color={`${level >= 8.5 ? 'red' : level >= 6.5 ? 'blue' : 'teal'}`}
             >
               <Img
                 src="/images/links/linkedin-badge.png"

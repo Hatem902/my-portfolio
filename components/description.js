@@ -1,5 +1,4 @@
-import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
-import { Button, Center, Collapse, Divider, Text } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 
 const Description = ({ shownContent, hiddenContent }) => {
@@ -7,8 +6,12 @@ const Description = ({ shownContent, hiddenContent }) => {
   const handleToggle = () => setShow(!show)
   return (
     <Text fontSize={14} mt={2}>
-      {shownContent}
-      {hiddenContent && (
+      {shownContent.map(contentItem => (
+        <Text mt={2} key={contentItem}>
+          {contentItem}
+        </Text>
+      ))}
+      {/* {hiddenContent && (
         <>
           <Collapse startingHeight={0} in={show}>
             {hiddenContent.map(contentItem => (
@@ -46,7 +49,7 @@ const Description = ({ shownContent, hiddenContent }) => {
             </Center>
           </>
         </>
-      )}
+      )} */}
     </Text>
   )
 }

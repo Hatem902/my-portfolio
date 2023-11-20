@@ -41,13 +41,13 @@ const Navbar = props => {
   const downloadResume = async () => {
     try {
       const response = await fetch(
-        '/HatemLamine_FullstackSoftwareEngineer_Resume.pdf'
+        '/HatemLamine_FullstackWebDeveloper_Resume.pdf'
       )
       const blob = await response.blob()
       const url = URL.createObjectURL(blob)
       const link = document.createElement('a')
       link.href = url
-      link.download = 'HatemLamine_FullstackSoftwareEngineer_Resume.pdf'
+      link.download = 'HatemLamine_FullstackWebDeveloper_Resume.pdf'
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)

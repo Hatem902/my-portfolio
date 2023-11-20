@@ -12,7 +12,6 @@ import {
   ListItem,
   SimpleGrid,
   Text,
-  Tooltip,
   chakra,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -25,7 +24,7 @@ import { GridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
-import thumbSimilarity from '../public/images/works/similarity-api-eye-catch.png'
+import thumbBir from '../public/images/works/bir-eye-catch-3.png'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -46,8 +45,8 @@ const Home = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
         >
-          Hello, I&apos;m a full-stack software engineer / modern tech
-          enthusiast
+          Hello, I&apos;m a software engineer specializing in
+          <br /> full-stack web development.
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -56,16 +55,28 @@ const Home = () => {
               Hatem Lamine
             </Heading>
             <p>
-              Full-stack software engineer
+              • Full-stack web developer
               <Link
                 px={1}
                 href="https://www.linkedin.com/company/xquant/videos/"
                 target="_blank"
               >
-                @ XQuant – Korea
-              </Link>{' '}
+                @XQuant
+              </Link>
+              – Seoul, Korea
             </p>
             <p>
+              • Founder of
+              <Link
+                px={1}
+                href="https://best-in-role-lol.vercel.app/"
+                target="_blank"
+              >
+                Best in Role
+              </Link>
+              startup — An esports voting platform with 52,000+ users.
+            </p>
+            {/* <p>
               Senior software engineering student{' '}
               <Tooltip
                 label="National Institute of Applied Science and Technology"
@@ -76,7 +87,7 @@ const Home = () => {
                   @ Insat
                 </Text>
               </Tooltip>
-            </p>
+            </p> */}
           </Box>
           <Box
             flexShrink={0}
@@ -88,8 +99,8 @@ const Home = () => {
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              w="100px"
-              h="100px"
+              w="99px"
+              h="99px"
               display="inline-block"
               borderRadius="full"
               overflow="hidden"
@@ -106,24 +117,28 @@ const Home = () => {
         </Box>
 
         <Section delay={0.1}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h3" mt={12} variant="section-title">
             Profile
           </Heading>
           <Paragraph>
-            I am a full-stack software engineer who is passionate about building
-            and shipping high-quality software that scales, with a focus on
-            delivering exceptional user experiences.
-            {/* <br />
-            Throughout my ever-lasting self-improvement journey, I aspire to
-            expand my proactive mindset, my affinity for problem solving, my
-            avidity for picking up new skills and exploring uncharted contexts,
-            as well as, sharpen my ability to produce content with attention to
-            detail. */}
+            I am passionate about{' '}
+            <Text as="span" color="green.400">
+              end-to-end
+            </Text>{' '}
+            building and shipping of{' '}
+            <Text as="span" color="green.400">
+              maintainable
+            </Text>{' '}
+            high-quality software that scales; as well as delivering exceptional{' '}
+            <Text as="span" color="green.400">
+              user experiences
+            </Text>
+            .
           </Paragraph>
-          <Box align="center" my={4}>
-            <NextLink href="/skills" passHref scroll={false}>
+          <Box align="center" my={4} mt={8}>
+            <NextLink href="/projects" passHref scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My Skills
+                My Projects
               </Button>
             </NextLink>
           </Box>
@@ -151,13 +166,13 @@ const Home = () => {
                 XQuant - Seoul, South Korea
               </Button>
             </Link>
-            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
+            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Web Developer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Full-time · Sept 2022 -{' '}
+            Full-time · 01/2022 -{' '}
             <Text as="span" color="green.400">
-              Currently employed
+              Present
             </Text>
           </Text>
 
@@ -165,15 +180,59 @@ const Home = () => {
             <Badge colorScheme="teal" mb={1}>
               Tech{' '}
             </Badge>{' '}
-            : Next.js · React.js · TypeScript · TailwindCSS
+            : Next.js · React.js · TypeScript · Tailwind CSS · Radix UI · React
+            Query (TanStack Query) + Axios · React Hook Forms · Zod · Docker
           </div>
-          <Description shownContent="• Currently collaborating alongside other developers, product managers and designers to build a full-stack contract management software." />
+          <Description
+            shownContent={[
+              '• Participated in PR reviews to maintain code quality standards. Made decisions paired with constructive comments and feedback, to approve or reject merges involving multiple features, fixes, and refactors.',
+              '• Wrote end-to-end high-quality code for complex features such as comparing two documents side by side (like github commits), managing user workspaces, and exposing analytical statistics for contract documents.',
+              '• Performed under pressure and directed my subteam to maintain peak performance during critical moments. Proposed robust and rational solutions to multiple complicated problems and dilemmas.'
+            ]}
+          />
           <Divider mt={1} mb={1.5} />
-
           <Flex fontWeight="bold" alignItems="center" pt={2}>
             {' '}
             <Link
-              href="https://www.linkedin.com/company/keyrus/"
+              href="https://www.linkedin.com/company/ernstandyoung/"
+              target="_blank"
+            >
+              <Button
+                as={Link}
+                leftIcon={<IoLogoLinkedin />}
+                mr={4}
+                px={0}
+                bgColor="transparent"
+                _hover={{ bgColor: 'transparent' }}
+              >
+                EY - Tunis, Tunisia
+              </Button>
+            </Link>
+            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Web Developer</p>
+          </Flex>
+
+          <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
+            Full-time · 12/2020 - 12/2021
+          </Text>
+
+          <div>
+            <Badge colorScheme="teal" mb={1}>
+              Tech{' '}
+            </Badge>{' '}
+            : Next · React · TS · Tailwind · Radix UI ·<br /> React Query ·
+            React Hook Forms · Zod · Docker
+          </div>
+          <Description
+            shownContent={[
+              '• Contributed to the architectural decisions for multiple modules within the EY Global Tax e-invoicing solution, considering business requirements, specific quality attributes, and compositions of domain teams for each module.',
+              '• Set-up advanced API endpoints with efficient DB Queries and schema validation. Created customizable frontend pages and components that consume them while maintaining end-to-end type safety & graceful error handling.'
+            ]}
+          />
+          <Divider mt={1} mb={1.5} />
+          <Flex fontWeight="bold" alignItems="center" pt={2}>
+            {' '}
+            <Link
+              href="https://www.linkedin.com/company/keyrus/about/"
               target="_blank"
             >
               <Button
@@ -187,32 +246,29 @@ const Home = () => {
                 Keyrus - Tunis, Tunisia
               </Button>
             </Link>
-            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
+            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Web Developer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Full-time · May 2022 - Aug 2022
+            Internship · 05/2020 - 11/2020
           </Text>
 
           <div>
             <Badge colorScheme="teal" mb={1}>
               Tech{' '}
             </Badge>{' '}
-            : Vue.js 3 · Nuxt.js 3 · Ant Design-Vue 3 · TypeScript
+            Vue.js 3 · Nuxt.js 3 · TypeScript
           </div>
           <Description
-            shownContent="• My work was critical in the migration of an expense management solution from Nuxt.js 2 to Nuxt.js 3."
-            hiddenContent={[
-              "• Accelerated the company's migration process by migrating numerous plugins, libraries, and dependencies, including Ant Design Vue 3, VueQuill 3, Quill Image Uploader, Pinia, etc.",
-              '• Initiated and guided the incorporation of new Vue.js 3 features into the solution.',
-              '• Leveled up the user experience by contributing to the prevention and resolution of 10+ bugs before they were shipped to production.'
+            shownContent={[
+              "• Played a critical role in the migration of an expense management solution from Nuxt.js 2 to Nuxt.js 3, speeding up the company's migration process by transitioning numerous plugins, libraries, and dependencies. Initiated and guided the integration of new Vue.js 3 features into the solution and prevented 3  bugs before they were shipped to production."
             ]}
           />
-
-          <Flex fontWeight="bold" alignItems="center">
+          <Divider mt={1} mb={1.5} />
+          <Flex fontWeight="bold" alignItems="center" pt={2}>
             {' '}
             <Link
-              href="https://www.linkedin.com/company/upkurs/"
+              href="https://www.linkedin.com/company/upkurs/about/"
               target="_blank"
             >
               <Button
@@ -223,33 +279,32 @@ const Home = () => {
                 bgColor="transparent"
                 _hover={{ bgColor: 'transparent' }}
               >
-                UpKurs - Tunis, Tunisia
+                Upkurs - Tunis, Tunisia
               </Button>
-            </Link>{' '}
-            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
+            </Link>
+            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Front-end Web Developer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Full-time · Jan 2022 - Apr 2022
+            Internship · 05/2019 - 11/2019
           </Text>
 
           <div>
             <Badge colorScheme="teal" mb={1}>
               Tech{' '}
             </Badge>{' '}
-            : Angular · TypeScript · CSS · Nest.js · Figma
+            Angular · TS · CSS · Nest.js · Figma
           </div>
           <Description
-            shownContent="• Originally hired to contribute to the development of a pedagogical platform for videoconferencing, I quickly ended up becoming a driving force in various areas including Frontend, Backend, and UI/UX Design."
-            hiddenContent={[
-              '• I frequently shared my vision with the UI/UX design team from both the designer and developer perspectives to ensure optimal UI/UX, app responsiveness, and a seamless build process.',
-              '• My contribution within the digital team was crucial in building, debugging, and maintaining fully functional features covering over 40% of the entire UI/UX material. Additionally, I was responsible for setting up backend endpoints for the features that I maintained.'
+            shownContent={[
+              '• Shared visions with the UI/UX design team from both the designer and developer perspectives, and created & maintained fully functional features covering over 40% of the entire UI/UX material for a pedagogical video-conferencing app.'
             ]}
           />
+          <Divider mt={1} mb={1.5} />
           <Box align="center" my={4} mt={8}>
-            <NextLink href="/projects" passHref scroll={false}>
+            <NextLink href="/skills" passHref scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My Projects
+                My Skills
               </Button>
             </NextLink>
           </Box>
@@ -270,7 +325,7 @@ const Home = () => {
           </Heading>
           <Paragraph>
             <Link
-              href="https://www.behance.net/gallery/157371967/My-Design-of-Spotify"
+              href="https://www.behance.net/gallery/184184057/Esports-Voting-Platform-Leaderboard"
               target="_blank"
             >
               {' '}
@@ -322,9 +377,9 @@ const Home = () => {
 
           <SimpleGrid paddingTop={3} columns={[0.5, 1, 1]} gap={6}>
             <GridItem
-              href="https://www.youtube.com/playlist?list=PLJ49vJop9dCb7H0oM_fc_BOuwrDlkKB_e"
-              title="Playlist of Demos for My Products"
-              thumbnail={thumbSimilarity}
+              href="https://www.youtube.com/watch?v=cootQ0SoJ0E&list=PLJ49vJop9dCb7H0oM_fc_BOuwrDlkKB_e&index=1&ab_channel=Tommyweb-dev"
+              title="Demos Playlist for My Web Apps"
+              thumbnail={thumbBir}
             ></GridItem>
           </SimpleGrid>
         </Section>

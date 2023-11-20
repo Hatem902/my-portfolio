@@ -1,308 +1,290 @@
 export const skills = [
   {
-    name: 'My core tech stack',
+    name: 'Current Core Tech',
     delay: 0.1,
     data: [
       {
-        name: 'Next.js 13',
-        level: '8'
+        name: 'Next.js',
+        level: '9'
       },
       {
         name: 'React.js',
-        level: '8',
+        level: '8.5',
         badge: 5
       },
       {
         name: 'TypeScript',
+        level: '9'
+      },
+      {
+        name: 'React Query + Axios',
+        level: '9'
+      },
+      {
+        name: 'Zustand/Jotai',
+        level: '8.5'
+      },
+      {
+        name: 'Tailwind CSS',
+        level: '9'
+      },
+      {
+        name: 'Radix UI',
         level: '8'
       },
       {
-        name: 'TailwindCSS',
-        level: '8'
-      }
-    ]
-  },
-  {
-    name: 'Secondary Tech',
-    delay: 0.1,
-    data: [
+        name: 'Shadcn UI',
+        level: '9'
+      },
       {
-        name: 'PlanetScale',
+        name: 'React Portals',
         level: '7.5'
       },
       {
-        name: 'SQL',
-        level: '7.5'
+        name: 'MySQL',
+        level: '8'
       },
       {
         name: 'Redis',
-        level: '7.5'
+        level: '8'
       },
       {
-        name: 'SupaBase',
-        level: '7.5'
+        name: 'PostgreSQL',
+        level: '8'
       },
       {
-        name: 'Upstash',
-        level: '7.5'
+        name: 'PlanetScale',
+        level: '8.5'
+      },
+      {
+        name: 'UpStash',
+        level: '8.5'
+      },
+      {
+        name: 'Drizzle ORM',
+        level: '8.5'
       },
       {
         name: 'Prisma',
-        level: '7.5'
+        level: '8'
       },
-
       {
-        name: "Radix UI & Shadcn's UI or Headless UI",
-        level: '7.5'
-      },
-
-      {
-        name: 'NextAuth.js (Auth.js now)',
-        level: '7.5'
+        name: 'NextAuth',
+        level: '8.5'
       },
       {
         name: 'Clerk',
-        level: '7.5'
+        level: '8.5'
       },
       {
-        name: 'OpenAI',
-        level: '7'
+        name: 'Stripe',
+        level: '8'
       },
       {
-        name: 'Strapi',
-        level: '6'
-      },
-      {
-        name: 'React Query',
-        level: '7'
+        name: 'React Hook Forms',
+        level: '9'
       },
       {
         name: 'Zod',
-        level: '7'
+        level: '9'
+      },
+      {
+        name: 'Docker',
+        level: '8'
+      }
+    ]
+  },
+  {
+    name: 'Current Additional Tech',
+    delay: 0.2,
+    data: [
+      {
+        name: 'tRPC',
+        level: '8.5'
+      },
+      {
+        name: 'AWS Lambda/Amplify',
+        level: '8'
       },
       {
         name: 'Vercel',
-        level: '7.5'
+        level: '9'
       },
       {
-        name: 'AWS Lambda',
-        level: '7.5'
+        name: 'NoSQL',
+        level: '8'
       },
       {
-        name: 'AWS Amplify',
+        name: 'MongoDB',
+        level: '8'
+      },
+      {
+        name: 'OpenAI API',
+        level: '8'
+      },
+      {
+        name: 'Strapi',
         level: '7.5'
       }
     ]
   },
   {
-    name: 'Essentials',
+    name: 'Basics',
     delay: 0.3,
     data: [
       {
         name: 'JavaScript',
-        level: '8',
+        level: '9',
         badge: 30
+      },
+      {
+        name: 'TypeScript',
+        level: '9'
       },
       {
         name: 'Node.js',
-        level: '8',
-        badge: 30
+        level: '8'
       },
       {
         name: 'CSS',
-        level: '8'
+        level: '9'
       },
       {
         name: 'HTML',
-        level: '7.5'
+        level: '9'
       },
       {
-        name: 'Bash',
-        level: '7'
-      },
-      {
-        name: 'Git & Github',
-        level: '8'
-      },
-      {
-        name: 'Gitlab',
-        level: '8'
+        name: 'Git',
+        level: '9'
       }
     ]
   },
   {
-    name: 'Futuristic tech interests',
-    delay: 0.1,
+    name: 'Concepts',
+    delay: 0.4,
     data: [
       {
-        name: 'AWS',
-        level: '5'
+        name: 'Performance Optimization',
+        level: '9'
+      },
+      {
+        name: 'Queries & Caching',
+        level: '9'
+      },
+      {
+        name: 'Software Architecture',
+        level: '8.5'
+      },
+      {
+        name: 'HTTP',
+        level: '9'
+      },
+      {
+        name: 'REST',
+        level: '9'
+      },
+      {
+        name: 'APIs',
+        level: '9'
+      },
+      {
+        name: 'UI/UX Design',
+        level: '9'
+      },
+      {
+        name: 'Cross-Browser Compatibility',
+        level: '9'
+      },
+      {
+        name: 'SEO',
+        level: '9'
+      },
+      {
+        name: 'Headless CMS',
+        level: '8'
       },
 
       {
-        name: 'Terraform',
-        level: '2'
+        name: 'Prompt Engineering',
+        level: '9'
       },
       {
-        name: 'NOSQL',
-        level: '6.5'
+        name: 'Design Patterns & GOF',
+        level: '9'
       },
       {
-        name: 'MongoDB',
-        level: '7'
+        name: 'Algorithms & Data Structures',
+        level: '8.5'
       },
       {
-        name: 'Axiom',
-        level: '3'
-      },
-
-      {
-        name: 'Drizzle ORM',
-        level: '2'
+        name: 'Devops/Cloud',
+        level: '8.5'
       },
       {
-        name: 'Astro (for rich static sites)',
-        level: '4'
-      },
-      {
-        name: 'Solid Start',
-        level: '3'
-      },
-      {
-        name: 'tRPC',
-        level: '3'
+        name: '(Docker, Kubernetes, Jenkins, Azure, Vercel, AWS)',
+        level: '8.5'
       }
     ]
   },
   {
     name: "Other tech I've used in the past",
-    delay: 0.1,
+    delay: 0.5,
     data: [
+      {
+        name: 'SupaBase',
+        level: '8'
+      },
+      {
+        name: 'Astro',
+        level: '8'
+      },
       {
         name: 'Angular',
         level: '7.5'
       },
       {
         name: 'Vue.js 3',
-        level: '7.5'
+        level: '8'
       },
       {
         name: 'Nuxt.js 3',
-        level: '7.5'
+        level: '8'
       },
       {
         name: 'Framer Motion',
-        level: '7.5'
+        level: '8.5'
       },
       {
         name: 'Svelte Kit',
-        level: '5'
+        level: '5.5'
       },
       {
         name: 'Nest.js',
-        level: '7'
+        level: '7.5'
       },
       {
         name: 'Figma',
-        level: '7.5'
-      },
-      {
-        name: 'Node.js',
         level: '8'
       },
       {
-        name: 'Zustand / Recoil / Redux / Context API',
-        level: '8'
+        name: 'Recoil / Redux / Context API',
+        level: '8.5'
       },
-      {
-        name: 'Stripe',
-        level: '7'
-      },
-
       {
         name: 'Chakra UI / Ant Design / MUI / Mantine UI',
-        level: '7.5'
+        level: '8.5'
       },
       {
         name: 'Three.js',
-        level: '4'
-      },
-      {
-        name: 'Java',
         level: '5'
       },
       {
+        name: 'Java',
+        level: '5.5'
+      },
+      {
         name: 'Python',
-        level: '6.5'
-      }
-    ]
-  },
-  {
-    name: 'Concepts',
-    delay: 0.3,
-    data: [
-      {
-        name: 'APIs / REST APIs',
-        level: '8'
-      },
-      {
-        name: 'Http Requests / Responses',
-        level: '8'
-      },
-      {
-        name: 'UI / UX Design',
-        level: '7.5'
-      },
-      {
-        name: 'Cross-browser compatibility and accessibility',
-        level: '7.5'
-      },
-      {
-        name: 'SEO optimization',
         level: '7'
-      },
-      {
-        name: 'Software Architecture',
-        level: '7.5'
-      },
-      {
-        name: 'Prompt engineering',
-        level: '8'
-      },
-      {
-        name: 'Headless CMS',
-        level: '7'
-      },
-      {
-        name: 'Design Patterns & GOF',
-        level: '7.5'
-      },
-
-      {
-        name: 'Algorithms & Data Structures',
-        level: '7.5'
-      },
-
-      {
-        name: 'UML',
-        level: '7.5'
-      },
-
-      {
-        name: 'OOP',
-        level: '7.5'
-      },
-      {
-        name: 'Scrum & Agile Dev',
-        level: '7.5'
-      },
-      {
-        name: 'MVC',
-        level: '7'
-      },
-      {
-        name: 'Debugging',
-        level: '7.5'
       }
     ]
   }

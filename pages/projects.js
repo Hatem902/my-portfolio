@@ -12,19 +12,156 @@ import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
+import thumbBir from '../public/images/works/bir-eye-catch-3.png'
 import thumbConvertly from '../public/images/works/convertly-eye-catch.png'
 import thumbCovidTracker from '../public/images/works/covid-tracker_eyecatch.png'
+import thumbEcommerce from '../public/images/works/ecommerce-eye-catch.png'
 import thumbPortfolio from '../public/images/works/portfolio-eye-catch.png'
 import thumbSimilarity from '../public/images/works/similarity-api-eye-catch.png'
 import thumbSpotify from '../public/images/works/spotify-eye-catch.png'
 const Projects = () => (
   <Layout title="Projects">
     <Container>
+      <Heading
+        mt={0}
+        as="h3"
+        variant="section-title"
+        fontSize={20}
+        mb={5}
+      ></Heading>
       <Heading mt={0} as="h3" variant="section-title" fontSize={20} mb={5}>
-        Projects
+        My Start-up
+      </Heading>
+      <Section>
+        <WorkGridItem
+          id="BiR : Esports Voting Platform + Leaderboard"
+          title="BiR : Esports Voting Platform + Leaderboard"
+          thumbnail={thumbBir}
+          demo="https://www.youtube.com/watch?v=cootQ0SoJ0E&list=PLJ49vJop9dCb7H0oM_fc_BOuwrDlkKB_e&index=1&ab_channel=tommy123"
+          link="https://best-in-role-lol.vercel.app/"
+          source="https://github.com/Hatem902/best-in-role"
+          design="https://www.behance.net/gallery/184184057/Esports-Voting-Platform-Leaderboard"
+          isStartUp={true}
+          webVitals="https://github.com/Hatem902/best-in-role#web-vitals"
+          tech={
+            <>
+              <Flex pt={0.5} justifyContent="center">
+                <div>
+                  Conceived for the 2023 League of Legends World Championship
+                  event, BiR (Best in Role) has swiftly gained popularity, with{' '}
+                  <Text fontWeight="bold" textColor="green.400" as="span">
+                    52,000+ esports fans actively using it
+                  </Text>{' '}
+                  during the event.{' '}
+                </div>
+              </Flex>
+              <Flex pt={1} justifyContent="center">
+                <div>
+                  <Badge colorScheme="teal" mb={1}>
+                    Tech{' '}
+                  </Badge>{' '}
+                  : Next.js 13.4 /w App Router & Route handlers · React ·
+                  TypeScript · React Query (Tanstack Query) + Axios · Tailwind
+                  CSS · Shadcn UI · MySQL · PlanetScale · Prisma · Clerk · Zod
+                </div>
+              </Flex>
+            </>
+          }
+        >
+          <Badge colorScheme="teal" mb={1}>
+            Targeted Quality Attributes:
+          </Badge>{' '}
+          1- Performance : Immediate reactivity through{' '}
+          <Text fontWeight="bold" textColor="green.400" as="span">
+            optimistic updates
+          </Text>
+          ,{' '}
+          <Text fontWeight="bold" textColor="green.400" as="span">
+            lazy loading
+          </Text>
+          ,{' '}
+          <Text fontWeight="bold" textColor="green.400" as="span">
+            efficient caching
+          </Text>
+          , and
+          <br />
+          <Text fontWeight="bold" textColor="green.400" as="span">
+            parallel queries
+          </Text>
+          .{' '}
+          <Text fontWeight="bold" textColor="green.400" as="span">
+            Lighthouse Performance score : 100
+          </Text>
+          .
+          <br />
+          2- Intuitive, clean, and straightforward UI/UX Design through
+          strategic structuring with whitespace, and establishing a visual
+          hierarchy:
+          <br /> Leaderboard & Votes take the top spot in{' '}
+          <Text fontWeight="bold" textColor="green.400" as="span">
+            attention allocation
+          </Text>
+          .
+          <br />
+          3- SEO & Advertising : Metadata, favicons, sitemaps, and OpenGraph
+          <br />
+          images + Advertising on X (Twitter), Reddit, and Twitch.{' '}
+          <Text fontWeight="bold" textColor="green.400" as="span">
+            LH SEO score : 100
+          </Text>
+          .
+          <br />
+          4- Maintainability :{' '}
+          <Text fontWeight="bold" textColor="green.400" as="span">
+            end-to-end type-safety
+          </Text>{' '}
+          (from backend endpoints
+          <br />
+          to frontend) + Highly customizable & typesafe reusable components.
+        </WorkGridItem>
+      </Section>
+      <Heading
+        as="h3"
+        variant="section-title"
+        fontSize={20}
+        mb={5}
+        mt={20}
+      ></Heading>
+      <Heading mt={0} as="h3" variant="section-title" fontSize={20} mb={5}>
+        Side Projects
       </Heading>
 
       <SimpleGrid columns={[0.5, 0.5, 1]} gap={10}>
+        <Section>
+          <WorkGridItem
+            id="E-Commerce + Dashboard & CMS App"
+            title="E-Commerce + Dashboard & CMS App"
+            thumbnail={thumbEcommerce}
+            demo="https://www.youtube.com/watch?v=ehZJeeosPIY&list=PLJ49vJop9dCb7H0oM_fc_BOuwrDlkKB_e&index=2&ab_channel=tommy123"
+            link="https://docs.google.com/document/d/1wSqbOiCfpHEPJPZTRCb_4H66-GKOvYg3TPVubPu5tHc/edit?usp=sharing"
+            source="https://docs.google.com/document/d/1s_0ewuUSAj8Oy1KuAYOSilre4TZta7k1zdSLU4mbQ7E/edit?usp=sharing"
+            tech={
+              <Flex pt={0.5} justifyContent="center">
+                <div>
+                  <Badge colorScheme="teal" mb={1}>
+                    Tech{' '}
+                  </Badge>{' '}
+                  : Next.js 13.4 with App Router · React · TypeScript · Tailwind
+                  CSS · Shadcn UI · Zod · React Query (Tanstack Query) + Axios ·
+                  React Hook Form · Prisma · MySQL · PlanetScale · Clerk ·
+                  Stripe
+                </div>
+              </Flex>
+            }
+          >
+            Full-stack E-Commerce + Dashboard & CMS App. Feature-packed with :
+            Admin Dashboard exposing statistics such as total revenue, sales,
+            products in stock, and more... | Highly Customizable CMS |
+            Multi-platform Image Uploading | Orders history & logs |
+            Authentication | Stores with seamless navigation & filtering | Cart
+            Management | Payment.
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem
             id="Text similarity API"
