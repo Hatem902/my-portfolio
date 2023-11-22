@@ -176,8 +176,8 @@ const Projects = () => (
                   <Badge colorScheme="teal" mb={1}>
                     Tech{' '}
                   </Badge>{' '}
-                  : Next.js 13.2 · TailwindCSS · Radix UI primitives ·
-                  TypeScript · PlanetScale · Prisma · Upstash · NextAuth.js
+                  : Next.js 13.2 · React.js · TailwindCSS · Radix UI primitives
+                  · TypeScript · PlanetScale · Prisma · Upstash · NextAuth.js
                 </div>
               </Flex>
             }
@@ -210,7 +210,7 @@ const Projects = () => (
                   <Badge colorScheme="teal" mb={1}>
                     Tech{' '}
                   </Badge>{' '}
-                  : Next.js ·
+                  : Next.js · React.js ·
                   <Link
                     px={1}
                     href="https://developer.spotify.com/documentation/web-api/"
@@ -340,7 +340,7 @@ const Projects = () => (
                   <Badge colorScheme="teal" mb={1}>
                     Tech{' '}
                   </Badge>{' '}
-                  : Next.js · Chakra UI · Framer Motion · Three.js
+                  : Next.js · React.js · Chakra UI · Framer Motion · Three.js
                 </div>
               </Flex>
             }

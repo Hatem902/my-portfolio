@@ -125,6 +125,10 @@ export const skills = [
       {
         name: 'Strapi',
         level: '7.5'
+      },
+      {
+        name: 'Payload CMS',
+        level: '7.5'
       }
     ]
   },
