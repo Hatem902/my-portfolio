@@ -78,7 +78,7 @@ export const WorkGridItem = ({
           opacity: '72%'
         }}
       >
-        <LinkOverlay href={link || demo} target="_blank">
+        <LinkOverlay href={demo || link} target="_blank">
           <Image
             src={thumbnail}
             alt={title}
@@ -134,7 +134,7 @@ export const WorkGridItem = ({
         wrap="wrap"
       >
         {demo && (
-          <Link href={demo} target="_blank" order={isStartUp ? 3 : 1}>
+          <Link href={demo} target="_blank" order={isStartUp ? 1 : 1}>
             <Button size="sm" leftIcon={<IoLogoYoutube />} colorScheme="teal">
               Demo
             </Button>
@@ -171,7 +171,7 @@ export const WorkGridItem = ({
             passHref
             scroll={false}
             target="_blank"
-            order={isStartUp ? 1 : 3}
+            order={isStartUp ? 2 : 2}
           >
             <Button size="sm" leftIcon={<LinkIcon />} colorScheme="teal">
               Website

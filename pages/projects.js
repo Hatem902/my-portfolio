@@ -22,116 +22,93 @@ import thumbSpotify from '../public/images/works/spotify-eye-catch.png'
 const Projects = () => (
   <Layout title="Projects">
     <Container>
-      <Heading
-        mt={0}
-        as="h3"
-        variant="section-title"
-        fontSize={20}
-        mb={5}
-      ></Heading>
       <Heading mt={0} as="h3" variant="section-title" fontSize={20} mb={5}>
-        My Start-up
-      </Heading>
-      <Section>
-        <WorkGridItem
-          id="BiR : Esports Voting Platform + Leaderboard"
-          title="BiR : Esports Voting Platform + Leaderboard"
-          thumbnail={thumbBir}
-          demo="https://www.youtube.com/watch?v=cootQ0SoJ0E&list=PLJ49vJop9dCb7H0oM_fc_BOuwrDlkKB_e&index=1&ab_channel=tommy123"
-          link="https://best-in-role-lol.vercel.app/"
-          source="https://github.com/Hatem902/best-in-role"
-          design="https://www.behance.net/gallery/184184057/Esports-Voting-Platform-Leaderboard"
-          isStartUp={true}
-          webVitals="https://github.com/Hatem902/best-in-role#web-vitals"
-          tech={
-            <>
-              <Flex pt={0.5} justifyContent="center">
-                <div>
-                  Conceived for the 2023 League of Legends World Championship
-                  event, BiR (Best in Role) has swiftly gained popularity, with{' '}
-                  <Text fontWeight="bold" textColor="green.400" as="span">
-                    52,000+ esports fans actively using it
-                  </Text>{' '}
-                  during the event.{' '}
-                </div>
-              </Flex>
-              <Flex pt={1} justifyContent="center">
-                <div>
-                  <Badge colorScheme="teal" mb={1}>
-                    Tech{' '}
-                  </Badge>{' '}
-                  : Next.js 13.4 /w App Router & Route handlers · React ·
-                  TypeScript · React Query (Tanstack Query) + Axios · Tailwind
-                  CSS · Shadcn UI · MySQL · PlanetScale · Prisma · Clerk · Zod
-                </div>
-              </Flex>
-            </>
-          }
-        >
-          <Badge colorScheme="teal" mb={1}>
-            Targeted Quality Attributes:
-          </Badge>{' '}
-          1- Performance : Immediate reactivity through{' '}
-          <Text fontWeight="bold" textColor="green.400" as="span">
-            optimistic updates
-          </Text>
-          ,{' '}
-          <Text fontWeight="bold" textColor="green.400" as="span">
-            lazy loading
-          </Text>
-          ,{' '}
-          <Text fontWeight="bold" textColor="green.400" as="span">
-            efficient caching
-          </Text>
-          , and
-          <br />
-          <Text fontWeight="bold" textColor="green.400" as="span">
-            parallel queries
-          </Text>
-          .{' '}
-          <Text fontWeight="bold" textColor="green.400" as="span">
-            Lighthouse Performance score : 100
-          </Text>
-          .
-          <br />
-          2- Intuitive, clean, and straightforward UI/UX Design through
-          strategic structuring with whitespace, and establishing a visual
-          hierarchy:
-          <br /> Leaderboard & Votes take the top spot in{' '}
-          <Text fontWeight="bold" textColor="green.400" as="span">
-            attention allocation
-          </Text>
-          .
-          <br />
-          3- SEO & Advertising : Metadata, favicons, sitemaps, and OpenGraph
-          <br />
-          images + Advertising on X (Twitter), Reddit, and Twitch.{' '}
-          <Text fontWeight="bold" textColor="green.400" as="span">
-            LH SEO score : 100
-          </Text>
-          .
-          <br />
-          4- Maintainability :{' '}
-          <Text fontWeight="bold" textColor="green.400" as="span">
-            end-to-end type-safety
-          </Text>{' '}
-          (from backend endpoints
-          <br />
-          to frontend) + Highly customizable & typesafe reusable components.
-        </WorkGridItem>
-      </Section>
-      <Heading
-        as="h3"
-        variant="section-title"
-        fontSize={20}
-        mb={5}
-        mt={20}
-      ></Heading>
-      <Heading mt={0} as="h3" variant="section-title" fontSize={20} mb={5}>
-        Side Projects
+        Projects
       </Heading>
 
       <SimpleGrid columns={[0.5, 0.5, 1]} gap={10}>
+        <Section>
+          <WorkGridItem
+            id="Best in Role (peaked 50,000+ users)"
+            title="Best in Role (peaked 50,000+ users)"
+            thumbnail={thumbBir}
+            demo="https://www.youtube.com/watch?v=cootQ0SoJ0E&list=PLJ49vJop9dCb7H0oM_fc_BOuwrDlkKB_e&index=1&ab_channel=tommy123"
+            link="https://best-in-role-lol.vercel.app/"
+            source="https://github.com/Hatem902/best-in-role"
+            design="https://www.behance.net/gallery/184184057/Esports-Voting-Platform-Leaderboard"
+            isStartUp={true}
+            webVitals="https://github.com/Hatem902/best-in-role#web-vitals"
+            tech={
+              <>
+                <Flex pt={0.5} justifyContent="center">
+                  <div style={{ marginBottom: '4px' }}>
+                    Esports Voting Platform + Leaderboard.
+                    <br />
+                    Created for the 2023 League of Legends World Championship
+                    event.
+                  </div>
+                </Flex>
+                <Flex pt={1} justifyContent="center">
+                  <div>
+                    <Badge colorScheme="teal" mb={1}>
+                      Tech{' '}
+                    </Badge>{' '}
+                    : Next.js 13.4 /w App Router & Route handlers · React ·
+                    TypeScript · React Query (Tanstack Query) + Axios · Tailwind
+                    CSS · Shadcn UI · MySQL · PlanetScale · Prisma · Clerk · Zod
+                  </div>
+                </Flex>
+              </>
+            }
+          >
+            <div style={{ textAlign: 'start' }}>
+              <Badge textAlign={'start'} colorScheme="teal" mb={1} mt={2}>
+                Targeted Quality Attributes:
+              </Badge>
+              <br /> 1- Performance : Immediate reactivity through{' '}
+              <Text fontWeight="bold" textColor="green.400" as="span">
+                optimistic updates
+              </Text>
+              ,{' '}
+              <Text fontWeight="bold" textColor="green.400" as="span">
+                lazy loading
+              </Text>
+              ,{' '}
+              <Text fontWeight="bold" textColor="green.400" as="span">
+                efficient caching
+              </Text>
+              , and {''}
+              <Text fontWeight="bold" textColor="green.400" as="span">
+                parallel queries
+              </Text>
+              .{' '}
+              <Text fontWeight="bold" textColor="green.400" as="span">
+                Lighthouse Performance score : 100
+              </Text>
+              .
+              <br />
+              2- Intuitive, clean UI/UX design: color shades, whitespace, visual
+              hierarchy, responsiveness, attention allocation.
+              <br />
+              3- SEO : Metadata, favicons, sitemaps, and OpenGraph images as
+              well as advertising on X (Twitter), Reddit, and Twitch.{' '}
+              <Text fontWeight="bold" textColor="green.400" as="span">
+                Lighthouse SEO score : 100
+              </Text>
+              .
+              <br />
+              4- Maintainability :{' '}
+              <Text fontWeight="bold" textColor="green.400" as="span">
+                Type safety end-to-end
+              </Text>
+              ,{' '}
+              <Text fontWeight="bold" textColor="green.400" as="span">
+                schema validation
+              </Text>
+              , and highly customizable & typesafe reusable components.
+            </div>
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem
             id="E-Commerce + Dashboard & CMS App"
@@ -182,10 +159,9 @@ const Projects = () => (
               </Flex>
             }
           >
-            Full-stack implementation and exposition of an API that quantifies
-            the similarity between two pieces of text through making use of
-            OpenAI's utilities.This API service website includes authentication
-            and a <br />
+            Implementation and exposition of an API that quantifies the
+            similarity between two pieces of text through making use of OpenAI's
+            utilities.This app includes a{' '}
             <Text fontWeight="bold" textColor="green.400" as="span">
               comprehensive API key system
             </Text>
@@ -218,25 +194,25 @@ const Projects = () => (
                   >
                     Official Spotify API
                   </Link>
-                  · Recoil · NextAuth.js · OAuth & JWT
+                  · Recoil · NextAuth.js · OAuth
                 </div>
               </Flex>
             }
           >
-            A redesigned, feature-packed Spotify web app with Spotify SSO
-            authentication that fetches your playlists from your real Spotify
-            account and provides you with a redesigned full Spotify experience,
-            from playing playlists and tweaking volume levels to skipping to
+            A redesigned Spotify experience with SSO authentication that fetches
+            your{' '}
+            <Text fontWeight="bold" textColor="green.400" as="span">
+              playlists from your real Spotify account
+            </Text>
+            . From playing playlists and tweaking volume levels to skipping to
             next or previous tracks, choosing a track, and controlling music
-            playback. <br />
-            The latency in playback and volume control in Spotify 2.0 is only 3%
-            slower than that of the real Spotify, making it almost as fast.
+            playback.
           </WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
-            id="Covid-19 Real-Time Tracker"
-            title="Covid-19 Real-Time Tracker"
+            id="Covid-19 Tracker"
+            title="Covid-19 Tracker"
             thumbnail={thumbCovidTracker}
             demo="https://www.youtube.com/watch?v=husGEgLmAmU&list=PLJ49vJop9dCb7H0oM_fc_BOuwrDlkKB_e&index=2&ab_channel=TommyVariety"
             link="https://covid-19-tracker-8732b.web.app/"
@@ -256,14 +232,9 @@ const Projects = () => (
               </Flex>
             }
           >
-            A Covid-19 Real-Time Tracker Web-app, using a free
-            <Link href="https://disease.sh/docs/" target="_blank">
-              {' '}
-              Covid-19 API
-            </Link>
-            . This app has been visited by 3200 users so far to track live,
-            relevant, and diverse Covid-19 Data, fetched and then nicely
-            filtered & exposed through graphs, maps, tables and info-boxes
+            A Covid-19 Tracker Web-app, using a free Covid-19 API. This app
+            tracks live, relevant, and diverse Covid-19 Data, fetched and then
+            filtered & exposed through graphs, maps, tables and info-boxes.
           </WorkGridItem>
         </Section>
         {/* <Section>
@@ -323,7 +294,7 @@ const Projects = () => (
             }
           >
             A File Converter Web-App, to convert everything from documents to
-            images, with a modern UI / UX Design.
+            images.
           </WorkGridItem>
         </Section>
         <Section>

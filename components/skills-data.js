@@ -1,6 +1,6 @@
 export const skills = [
   {
-    name: 'Current Core Tech',
+    name: 'Full-stack',
     delay: 0.1,
     data: [
       {
@@ -89,26 +89,8 @@ export const skills = [
         level: '9'
       },
       {
-        name: 'Docker',
-        level: '8'
-      }
-    ]
-  },
-  {
-    name: 'Current Additional Tech',
-    delay: 0.2,
-    data: [
-      {
-        name: 'tRPC',
-        level: '8.5'
-      },
-      {
-        name: 'AWS Lambda/Amplify',
-        level: '8'
-      },
-      {
-        name: 'Vercel',
-        level: '9'
+        name: 'Payload CMS',
+        level: '5'
       },
       {
         name: 'NoSQL',
@@ -119,16 +101,42 @@ export const skills = [
         level: '8'
       },
       {
-        name: 'OpenAI API',
+        name: 'Express',
+        level: '7.5'
+      },
+      {
+        name: 'tRPC',
+        level: '8.5'
+      }
+    ]
+  },
+  {
+    name: 'Devops/Cloud',
+    delay: 0.2,
+    data: [
+      {
+        name: 'Docker',
         level: '8'
       },
       {
-        name: 'Strapi',
-        level: '7.5'
+        name: 'Kubernetes',
+        level: '6.5'
       },
       {
-        name: 'Payload CMS',
-        level: '7.5'
+        name: 'Jenkins',
+        level: '7'
+      },
+      {
+        name: 'AWS',
+        level: '7'
+      },
+      {
+        name: 'Azure',
+        level: '7'
+      },
+      {
+        name: 'Vercel',
+        level: '9'
       }
     ]
   },
@@ -176,24 +184,20 @@ export const skills = [
         level: '9'
       },
       {
+        name: 'Error Handling',
+        level: '8.5'
+      },
+      {
         name: 'Software Architecture',
         level: '8.5'
       },
       {
-        name: 'HTTP',
-        level: '9'
-      },
-      {
-        name: 'REST',
-        level: '9'
-      },
-      {
-        name: 'APIs',
+        name: 'HTTP/APIs/REST',
         level: '9'
       },
       {
         name: 'UI/UX Design',
-        level: '9'
+        level: '8.5'
       },
       {
         name: 'Cross-Browser Compatibility',
@@ -204,29 +208,12 @@ export const skills = [
         level: '9'
       },
       {
-        name: 'Headless CMS',
-        level: '8'
-      },
-
-      {
-        name: 'Prompt Engineering',
-        level: '9'
-      },
-      {
-        name: 'Design Patterns & GOF',
-        level: '9'
-      },
-      {
         name: 'Algorithms & Data Structures',
         level: '8.5'
       },
       {
-        name: 'Devops/Cloud',
-        level: '8.5'
-      },
-      {
-        name: '(Docker, Kubernetes, Jenkins, Azure, Vercel, AWS)',
-        level: '8.5'
+        name: 'Design Patterns & GOF',
+        level: '9'
       }
     ]
   },
@@ -234,10 +221,6 @@ export const skills = [
     name: "Other tech I've used in the past",
     delay: 0.5,
     data: [
-      {
-        name: 'SupaBase',
-        level: '8'
-      },
       {
         name: 'Astro',
         level: '8'
@@ -252,6 +235,10 @@ export const skills = [
       },
       {
         name: 'Nuxt.js 3',
+        level: '8'
+      },
+      {
+        name: 'SupaBase',
         level: '8'
       },
       {

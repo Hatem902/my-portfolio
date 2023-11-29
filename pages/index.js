@@ -18,7 +18,7 @@ import {
 import Image from 'next/image'
 import NextLink from 'next/link'
 import { useState } from 'react'
-import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoSchool } from 'react-icons/io5'
 import Description from '../components/description'
 import { GridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
@@ -45,8 +45,8 @@ const Home = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
         >
-          Hello, I&apos;m a software engineer specializing in
-          <br /> full-stack web development.
+          Hello, I'm a full-stack web developer based in Tunis, Tunisia.
+          <br />
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -54,18 +54,36 @@ const Home = () => {
             <Heading as="h2" variant="page-title">
               Hatem Lamine
             </Heading>
-            <p>
-              • Full-stack web developer
+            <p style={{ marginTop: '4px' }}>
+              • Full-stack web developer at
               <Link
                 px={1}
                 href="https://www.linkedin.com/company/xquant/videos/"
                 target="_blank"
+                textDecoration={'underline'}
               >
-                @XQuant
+                XQuant
               </Link>
-              – Seoul, Korea
+              <br /> – Seoul, South Korea (full-time, remote).
             </p>
-            <p>
+            <p style={{ marginTop: '4px' }}>
+              • 5th-year software engineering student at
+              <Link
+                px={1}
+                href="https://www.linkedin.com/school/national-institute-of-applied-science-and-technology/"
+                target="_blank"
+                textDecoration={'underline'}
+                mr={-1}
+              >
+                INSAT
+              </Link>
+              .
+            </p>
+            <p style={{ marginTop: '4px' }}>
+              • Planning a mandatory six-month or longer end-of-study
+              internship, in Europe.
+            </p>
+            {/* <p style={{ marginTop: '4px' }}>
               • Founder of
               <Link
                 px={1}
@@ -75,7 +93,7 @@ const Home = () => {
                 Best in Role
               </Link>
               startup — An esports voting platform with 52,000+ users.
-            </p>
+            </p> */}
             {/* <p>
               Senior software engineering student{' '}
               <Tooltip
@@ -106,7 +124,7 @@ const Home = () => {
               overflow="hidden"
             >
               <ProfileImage
-                src="/images/hatem2.jpg"
+                src="/images/hatem3.jpg"
                 alt="Profile image"
                 borderRadius="full"
                 width="100%"
@@ -121,7 +139,7 @@ const Home = () => {
             Profile
           </Heading>
           <Paragraph>
-            I am passionate about{' '}
+            I find joy in{' '}
             <Text as="span" color="green.400">
               end-to-end
             </Text>{' '}
@@ -170,7 +188,7 @@ const Home = () => {
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Full-time · 01/2022 -{' '}
+            Full-time · Remote · 01/2022 -{' '}
             <Text as="span" color="green.400">
               Present
             </Text>
@@ -185,12 +203,14 @@ const Home = () => {
           </div>
           <Description
             shownContent={[
-              '• Participated in PR reviews to maintain code quality standards. Made decisions paired with constructive comments and feedback, to approve or reject merges involving multiple features, fixes, and refactors.',
+              '• Participated in PR reviews to maintain code quality standards. Made decisions paired with constructive comments and feedback, to approve or reject merges involving multiple features, fixes, and refactors.'
+            ]}
+            hiddenContent={[
               '• Wrote end-to-end high-quality code for complex features such as comparing two documents side by side (like github commits), managing user workspaces, and exposing analytical statistics for contract documents.',
-              '• Performed under pressure and directed my subteam to maintain peak performance during critical moments. Proposed robust and rational solutions to multiple complicated problems and dilemmas.'
+              '• Effectively navigated high-pressure situations, guiding my subteam to optimal performance with a pragmatic and composed approach. Communicated and proposed robust, rational solutions for multiple complicated problems.'
             ]}
           />
-          <Divider mt={1} mb={1.5} />
+
           <Flex fontWeight="bold" alignItems="center" pt={2}>
             {' '}
             <Link
@@ -212,7 +232,7 @@ const Home = () => {
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Full-time · 12/2020 - 12/2021
+            Full-time · On-site · 12/2020 - 12/2021
           </Text>
 
           <div>
@@ -224,11 +244,12 @@ const Home = () => {
           </div>
           <Description
             shownContent={[
-              '• Contributed to the architectural decisions for multiple modules within the EY Global Tax e-invoicing solution, considering business requirements, specific quality attributes, and compositions of domain teams for each module.',
               '• Set-up advanced API endpoints with efficient DB Queries and schema validation. Created customizable frontend pages and components that consume them while maintaining end-to-end type safety & graceful error handling.'
             ]}
+            hiddenContent={[
+              '• Contributed to the architectural decisions for two modules within the EY Global Tax e-invoicing solution, considering business requirements, specific quality attributes, and compositions of domain teams for each module.'
+            ]}
           />
-          <Divider mt={1} mb={1.5} />
           <Flex fontWeight="bold" alignItems="center" pt={2}>
             {' '}
             <Link
@@ -250,21 +271,23 @@ const Home = () => {
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Internship · 05/2020 - 11/2020
+            Internship · On-site · 05/2020 - 11/2020
           </Text>
 
           <div>
             <Badge colorScheme="teal" mb={1}>
               Tech{' '}
             </Badge>{' '}
-            Vue.js 3 · Nuxt.js 3 · TypeScript
+            Vue.js 3 · Nuxt.js 3 · Express · TypeScript
           </div>
           <Description
             shownContent={[
-              "• Played a critical role in the migration of an expense management solution from Nuxt.js 2 to Nuxt.js 3, speeding up the company's migration process by transitioning numerous plugins, libraries, and dependencies. Initiated and guided the integration of new Vue.js 3 features into the solution and prevented 3  bugs before they were shipped to production."
+              "• Migrated a large expense management solution from Nuxt.js 2 to Nuxt.js 3, speeding up the company's migration process by transitioning numerous plugins, libraries, and dependencies."
+            ]}
+            hiddenContent={[
+              '• Initiated and guided the integration of the new Vue.js 3.0 release updates into the solution and implemented multiple features end-to-end.'
             ]}
           />
-          <Divider mt={1} mb={1.5} />
           <Flex fontWeight="bold" alignItems="center" pt={2}>
             {' '}
             <Link
@@ -286,7 +309,7 @@ const Home = () => {
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Internship · 05/2019 - 11/2019
+            Internship · On-site · 03/2020 - 04/2020
           </Text>
 
           <div>
@@ -297,41 +320,122 @@ const Home = () => {
           </div>
           <Description
             shownContent={[
-              '• Shared visions with the UI/UX design team from both the designer and developer perspectives, and created & maintained fully functional features covering over 40% of the entire UI/UX material for a pedagogical video-conferencing app.'
+              '• Implemented 20% of the front-end material for a video-conferencing app, in collaboration with the UI/UX team.'
             ]}
           />
-          <Divider mt={1} mb={1.5} />
-          <Box align="center" my={4} mt={8}>
+
+          <Box align="center" my={6} mt="16">
             <NextLink href="/skills" passHref scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My Skills
+                Tech Stack
               </Button>
             </NextLink>
           </Box>
         </Section>
-
         <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Education
+          </Heading>
+
+          <Flex fontWeight="bold" alignItems="center" pt={2}>
+            {' '}
+            <Link
+              href="https://www.linkedin.com/school/national-institute-of-applied-science-and-technology/"
+              target="_blank"
+            >
+              <Button
+                as={Link}
+                leftIcon={<IoSchool />}
+                mr={4}
+                px={0}
+                bgColor="transparent"
+                _hover={{ bgColor: 'transparent' }}
+              >
+                INSAT University - Tunis, Tunisia
+              </Button>
+            </Link>
+            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Software Engineering</p>
+          </Flex>
+
+          <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
+            2019 - Present (5th year) · Expected software engineering degree in
+            2024.
+          </Text>
+
+          <div>
+            <Badge colorScheme="teal" mb={1}>
+              course of study{' '}
+            </Badge>{' '}
+            :{' '}
+            <Text fontSize={14} as="span">
+              Studied a 2-year preparatory cycle, where the first year included
+              Mathematics, Physics, and IT, while the second year was dedicated
+              to Software Engineering.
+              <br />
+              Subsequently, pursued a 3-year engineering program in Software
+              Engineering, encompassing courses in web development, software
+              architecture, big data, design patterns devops, and cloud
+              computing.
+            </Text>
+          </div>
+          <div style={{ marginTop: '8px' }}>
+            <Badge colorScheme="teal" mb={1}>
+              End-of-study internship{' '}
+            </Badge>{' '}
+            :{' '}
+            <Text fontSize={14} as="span">
+              I’m currently employed as a full-stack web developer at XQuant -
+              Seoul, South Korea (full-time, remote). Concurrently, I’m a
+              5th-year software engineering student at INSAT.
+              <br />
+              <Text as="span" fontWeight={'semibold'} color="green.400">
+                To fulfill my software engineering degree requirements (modeled
+                after the French system), I'm planning a mandatory six-month or
+                longer end-of-study internship, in Europe.
+              </Text>
+            </Text>
+          </div>
+
+          <Divider mt={1} mb={1.5} />
+
+          <Flex fontWeight="bold" alignItems="center" pt={2}>
+            {' '}
+            <Link
+              href="https://www.linkedin.com/school/lyc%C3%A9e-pilote-nabeul-lpn/"
+              target="_blank"
+            >
+              <Button
+                as={Link}
+                leftIcon={<IoSchool />}
+                mr={3.5}
+                px={0}
+                bgColor="transparent"
+                _hover={{ bgColor: 'transparent' }}
+              >
+                Pioneer High School Of Nabeul
+              </Button>
+            </Link>
+            <p>|&nbsp;&nbsp;</p> <p>Baccalaureate mathematics</p>
+          </Flex>
+
+          <Text mb={16} mt={0.5} fontSize="xs" fontWeight="bold">
+            2015 - 2019 · Grade 17.41/20 (honors)
+          </Text>
+        </Section>
+        <Section delay={0.4}>
           <Heading as="h3" variant="section-title">
             Languages
           </Heading>
           <Paragraph>
-            French, Arabic, English – Professional proficiency or above
+            French, Arabic, English – Professional proficiency
           </Paragraph>
         </Section>
 
-        <Section delay={0.3}>
+        <Section delay={0.5}>
           <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
           <Paragraph>
-            <Link
-              href="https://www.behance.net/gallery/184184057/Esports-Voting-Platform-Leaderboard"
-              target="_blank"
-            >
-              {' '}
-              UI / UX Design
-            </Link>{' '}
-            , Video-editing, Photography, Bodybuilding,{' '}
             <Link
               href="https://www.youtube.com/watch?v=UntYS_X3iSM&list=PLJ49vJop9dCaDvzzX79cOCtCfpp7Ad7py&index=1&ab_channel=IcyVeins"
               target="_blank"
@@ -339,11 +443,19 @@ const Home = () => {
               {' '}
               Piano
             </Link>
-            , Singing, Journaling.
+            , music theory,{' '}
+            <Link
+              href="https://www.behance.net/gallery/184184057/Esports-Voting-Platform-Leaderboard"
+              target="_blank"
+            >
+              {' '}
+              design
+            </Link>
+            , video-editing, hiking, journaling, working out.
           </Paragraph>
         </Section>
 
-        <Section delay={0.3}>
+        <Section delay={0.6}>
           <Heading as="h3" variant="section-title" mb="2.5">
             On the web
           </Heading>
@@ -378,7 +490,7 @@ const Home = () => {
           <SimpleGrid paddingTop={3} columns={[0.5, 1, 1]} gap={6}>
             <GridItem
               href="https://www.youtube.com/watch?v=cootQ0SoJ0E&list=PLJ49vJop9dCb7H0oM_fc_BOuwrDlkKB_e&index=1&ab_channel=Tommyweb-dev"
-              title="Demos Playlist for My Web Apps"
+              title="My Web Apps – Playlist"
               thumbnail={thumbBir}
             ></GridItem>
           </SimpleGrid>
