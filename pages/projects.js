@@ -29,8 +29,8 @@ const Projects = () => (
       <SimpleGrid columns={[0.5, 0.5, 1]} gap={10}>
         <Section>
           <WorkGridItem
-            id="Best in Role (peaked 50,000+ users)"
-            title="Best in Role (peaked 50,000+ users)"
+            id="Best in Role (peaked 50k+ users)"
+            title="Best in Role (peaked 50k+ users)"
             thumbnail={thumbBir}
             demo="https://www.youtube.com/watch?v=cootQ0SoJ0E&list=PLJ49vJop9dCb7H0oM_fc_BOuwrDlkKB_e&index=1&ab_channel=tommy123"
             link="https://best-in-role-lol.vercel.app/"

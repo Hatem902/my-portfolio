@@ -80,8 +80,8 @@ const Home = () => {
               .
             </p>
             <p style={{ marginTop: '4px' }}>
-              • Planning a mandatory six-month or longer end-of-study
-              internship, in Europe.
+              • Planning a mandatory six-month end-of-study internship, in
+              Europe.
             </p>
             {/* <p style={{ marginTop: '4px' }}>
               • Founder of
@@ -384,14 +384,11 @@ const Home = () => {
             </Badge>{' '}
             :{' '}
             <Text fontSize={14} as="span">
-              I’m currently employed as a full-stack web developer at XQuant -
-              Seoul, South Korea (full-time, remote). Concurrently, I’m a
-              5th-year software engineering student at INSAT.
-              <br />
+              I’m currently a 5th-year software engineering student at INSAT.{' '}
               <Text as="span" fontWeight={'semibold'} color="green.400">
                 To fulfill my software engineering degree requirements (modeled
-                after the French system), I'm planning a mandatory six-month or
-                longer end-of-study internship, in Europe.
+                after the French system), I'm planning a mandatory six-month
+                end-of-study internship.
               </Text>
             </Text>
           </div>
