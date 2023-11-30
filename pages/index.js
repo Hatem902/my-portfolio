@@ -80,8 +80,7 @@ const Home = () => {
               .
             </p>
             <p style={{ marginTop: '4px' }}>
-              • Planning a mandatory six-month end-of-study internship, in
-              Europe.
+              • Planning a mandatory six-month end-of-study internship.
             </p>
             {/* <p style={{ marginTop: '4px' }}>
               • Founder of
