@@ -80,7 +80,7 @@ const Home = () => {
               .
             </p>
             <p style={{ marginTop: '4px' }}>
-              • Planning a mandatory six-month end-of-study internship.
+              • Planning a mendatory 6-month end-of-study internship.
             </p>
             {/* <p style={{ marginTop: '4px' }}>
               • Founder of
@@ -151,8 +151,20 @@ const Home = () => {
               user experiences
             </Text>
             .
+            <Text mt={-3} fontSize={14}>
+              <br />– FYI:
+              <Link
+                px={1}
+                href="https://www.canva.com/design/DAF18lONJVs/hqs6DrH7P55oAUl49tAZRA/view?utm_content=DAF18lONJVs&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                target="_blank"
+                textDecoration={'underline'}
+              >
+                This
+              </Link>
+              is how I've been managing both full-time work and studying.
+            </Text>
           </Paragraph>
-          <Box align="center" my={4} mt={8}>
+          <Box align="center" my={4} mt={12}>
             <NextLink href="/projects" passHref scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My Projects
@@ -358,7 +370,7 @@ const Home = () => {
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
             2019 - Present (5th year) · Expected software engineering degree in
-            2024.
+            2024
           </Text>
 
           <div>
@@ -415,7 +427,7 @@ const Home = () => {
           </Flex>
 
           <Text mb={16} mt={0.5} fontSize="xs" fontWeight="bold">
-            2015 - 2019 · Grade 17.41/20 (honors)
+            2015 - 2019 · Grade: 17.41/20, honors. Rank: 642
           </Text>
         </Section>
         <Section delay={0.4}>
