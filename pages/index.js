@@ -55,18 +55,6 @@ const Home = () => {
               Hatem Lamine
             </Heading>
             <p style={{ marginTop: '4px' }}>
-              • Full-stack web developer at
-              <Link
-                px={1}
-                href="https://www.linkedin.com/company/xquant/videos/"
-                target="_blank"
-                textDecoration={'underline'}
-              >
-                XQuant
-              </Link>
-              <br /> – Seoul, South Korea (full-time, remote).
-            </p>
-            <p style={{ marginTop: '4px' }}>
               • 5th-year software engineering student at
               <Link
                 px={1}
@@ -80,7 +68,8 @@ const Home = () => {
               .
             </p>
             <p style={{ marginTop: '4px' }}>
-              • Planning a mendatory 6-month end-of-study internship.
+              • Planning a mendatory six-month end-of-study internship starting
+              anytime after I’ll have completed my studies on 13/01/2024.
             </p>
             {/* <p style={{ marginTop: '4px' }}>
               • Founder of
@@ -138,33 +127,28 @@ const Home = () => {
             Profile
           </Heading>
           <Paragraph>
-            I find joy in{' '}
+            I enjoy{' '}
             <Text as="span" color="green.400">
               end-to-end
             </Text>{' '}
-            building and shipping of{' '}
+            building of{' '}
             <Text as="span" color="green.400">
               maintainable
-            </Text>{' '}
-            high-quality software that scales; as well as delivering exceptional{' '}
-            <Text as="span" color="green.400">
-              user experiences
             </Text>
-            .
-            <Text mt={-3} fontSize={14}>
-              <br />– FYI:
-              <Link
-                px={1}
-                href="https://www.canva.com/design/DAF18lONJVs/hqs6DrH7P55oAUl49tAZRA/view?utm_content=DAF18lONJVs&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-                target="_blank"
-                textDecoration={'underline'}
-              >
-                This
-              </Link>
-              is how I've been managing both full-time work and studying.
+            , high-quality software that scales; as well as creating exceptional{' '}
+            <Text as="span" color="green.400">
+              user experiences.
+            </Text>{' '}
+            Additionally, I find pleasure in continuously shipping well-defined{' '}
+            <Text as="span" color="green.400">
+              deliverables
+            </Text>{' '}
+            that precisely align with{' '}
+            <Text as="span" color="green.400">
+              business requirements.
             </Text>
           </Paragraph>
-          <Box align="center" my={4} mt={12}>
+          <Box align="center" my={4} mt={8}>
             <NextLink href="/projects" passHref scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My Projects
@@ -199,26 +183,23 @@ const Home = () => {
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Full-time · Remote · 01/2022 -{' '}
-            <Text as="span" color="green.400">
-              Present
-            </Text>
+            Full-time · Remote · 12/2021 - 11/2023 (2 years)
           </Text>
 
           <div>
             <Badge colorScheme="teal" mb={1}>
               Tech{' '}
             </Badge>{' '}
-            : Next.js · React.js · TypeScript · Tailwind CSS · Radix UI · React
-            Query (TanStack Query) + Axios · React Hook Forms · Zod · Docker
+            : Next.js · React · Node.js · TypeScript · Tailwind CSS · Radix UI ·
+            React Query + Axios · React Hook Forms · Zod · Docker
           </div>
           <Description
             shownContent={[
-              '• Participated in PR reviews to maintain code quality standards. Made decisions paired with constructive comments and feedback, to approve or reject merges involving multiple features, fixes, and refactors.'
+              '• Proposed and implemented an infinite scrolling solution resulting in an exceptional user experience and a 10x performance increase. (Through transforming an initial 6 seconds loading time into virtually unnoticeable 50ms loading times as the user scrolls down.)'
             ]}
             hiddenContent={[
-              '• Wrote end-to-end high-quality code for complex features such as comparing two documents side by side (like github commits), managing user workspaces, and exposing analytical statistics for contract documents.',
-              '• Effectively navigated high-pressure situations, guiding my subteam to optimal performance with a pragmatic and composed approach. Communicated and proposed robust, rational solutions for multiple complicated problems.'
+              '• Participated in PR reviews to maintain code quality standards. Made decisions paired with constructive comments and feedback, to approve or reject merges involving multiple features, fixes, and refactors.',
+              '• Wrote end-to-end high-quality code for complex features such as comparing two documents side by side (like github commits), managing user workspaces, and exposing analytical statistics for contract documents.'
             ]}
           />
 
@@ -243,22 +224,25 @@ const Home = () => {
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Full-time · On-site · 12/2020 - 12/2021
+            Full-time · On-site · 11/2020 - 10/2021 (1 year)
           </Text>
 
           <div>
             <Badge colorScheme="teal" mb={1}>
               Tech{' '}
             </Badge>{' '}
-            : Next · React · TS · Tailwind · Radix UI ·<br /> React Query ·
-            React Hook Forms · Zod · Docker
+            : Next.js · React · Node.js · TS · Tailwind · Radix UI ·<br /> React
+            Query · React Hook Forms · Zod · Docker · Cypress
           </div>
           <Description
             shownContent={[
-              '• Set-up advanced API endpoints with efficient DB Queries and schema validation. Created customizable frontend pages and components that consume them while maintaining end-to-end type safety & graceful error handling.'
+              '• Set-up advanced API endpoints with optimized DB Queries and schema validation.',
+              '• Created customizable frontend pages and components that consume them while maintaining end-to-end type safety, graceful error handling, and efficient caching. (In collaboration with the UX/UI design team.)'
             ]}
             hiddenContent={[
-              '• Contributed to the architectural decisions for two modules within the EY Global Tax e-invoicing solution, considering business requirements, specific quality attributes, and compositions of domain teams for each module.'
+              '•  Designed optimal data structures for complex features.',
+              '•  Set up End-to-End Tests using Cypress with a Test-Driven Development (TDD) approach.',
+              '• Contributed to the architectural decisions for two modules within GTES (EY’s Global Tax E-invoicing Solution), ensuring a precise alignment with the business requirements.'
             ]}
           />
           <Flex fontWeight="bold" alignItems="center" pt={2}>
@@ -282,14 +266,14 @@ const Home = () => {
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Internship · On-site · 05/2020 - 11/2020
+            Internship · On-site · 04/2020 - 09/2020 (6 months)
           </Text>
 
           <div>
             <Badge colorScheme="teal" mb={1}>
               Tech{' '}
             </Badge>{' '}
-            Vue.js 3 · Nuxt.js 3 · Express · TypeScript
+            Vue.js 3 · Nuxt.js 3 · Node.js · Express.js · TypeScript
           </div>
           <Description
             shownContent={[
@@ -320,22 +304,33 @@ const Home = () => {
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
-            Internship · On-site · 03/2020 - 04/2020
+            Internship · On-site · 01/2020 - 02/2020 (2 months)
           </Text>
 
           <div>
             <Badge colorScheme="teal" mb={1}>
               Tech{' '}
             </Badge>{' '}
-            Angular · TS · CSS · Nest.js · Figma
+            Angular · TS · CSS · Node.js · Nest.js · Figma
           </div>
           <Description
             shownContent={[
-              '• Implemented 20% of the front-end material for a video-conferencing app, in collaboration with the UI/UX team.'
+              '• Implemented 20% of the front-end material for a video-conferencing app, in collaboration with the UX/UI team.'
             ]}
           />
-
-          <Box align="center" my={6} mt="16">
+          <Text mt={-1} fontSize={14}>
+            <br />– PS:
+            <Link
+              px={1}
+              href="https://www.canva.com/design/DAF18lONJVs/hqs6DrH7P55oAUl49tAZRA/view?utm_content=DAF18lONJVs&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+              target="_blank"
+              textDecoration={'underline'}
+            >
+              This
+            </Link>
+            is how I managed studying while working full-time in the past.
+          </Text>
+          <Box align="center" my={6} mt="12">
             <NextLink href="/skills" passHref scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 Tech Stack
@@ -385,8 +380,8 @@ const Home = () => {
               <br />
               Subsequently, pursued a 3-year engineering program in Software
               Engineering, encompassing courses in web development, software
-              architecture, big data, design patterns devops, and cloud
-              computing.
+              architecture, big data, design patterns, DevOps, testing, and
+              cloud computing.
             </Text>
           </div>
           <div style={{ marginTop: '8px' }}>
@@ -395,11 +390,12 @@ const Home = () => {
             </Badge>{' '}
             :{' '}
             <Text fontSize={14} as="span">
-              I’m currently a 5th-year software engineering student at INSAT.{' '}
+              Currently, I’m at my 5th year.{' '}
               <Text as="span" fontWeight={'semibold'} color="green.400">
                 To fulfill my software engineering degree requirements (modeled
                 after the French system), I'm planning a mandatory six-month
-                end-of-study internship.
+                end-of-study internship starting anytime after I’ll have
+                completed my studies on 13/01/2024.
               </Text>
             </Text>
           </div>

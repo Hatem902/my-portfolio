@@ -54,8 +54,8 @@ const Projects = () => (
                       Tech{' '}
                     </Badge>{' '}
                     : Next.js 13.4 /w App Router & Route handlers · React ·
-                    TypeScript · React Query (Tanstack Query) + Axios · Tailwind
-                    CSS · Shadcn UI · MySQL · PlanetScale · Prisma · Clerk · Zod
+                    Node.js · TypeScript · React Query + Axios · Tailwind CSS ·
+                    Shadcn UI · MySQL · PlanetScale · Prisma · Clerk · Zod
                   </div>
                 </Flex>
               </>
@@ -63,9 +63,9 @@ const Projects = () => (
           >
             <div style={{ textAlign: 'start' }}>
               <Badge textAlign={'start'} colorScheme="teal" mb={1} mt={2}>
-                Targeted Quality Attributes:
+                Targeted App Requirements:
               </Badge>
-              <br /> 1- Performance : Immediate reactivity through{' '}
+              <br /> 1- Performance: Immediate reactivity through{' '}
               <Text fontWeight="bold" textColor="green.400" as="span">
                 optimistic updates
               </Text>
@@ -87,17 +87,17 @@ const Projects = () => (
               </Text>
               .
               <br />
-              2- Intuitive, clean UI/UX design: color shades, whitespace, visual
+              2- Intuitive, clean UX/UI design: color shades, whitespace, visual
               hierarchy, responsiveness, attention allocation.
               <br />
-              3- SEO : Metadata, favicons, sitemaps, and OpenGraph images as
-              well as advertising on X (Twitter), Reddit, and Twitch.{' '}
+              3- SEO: Metadata, favicons, sitemaps, and OpenGraph images as well
+              as advertising on X (Twitter), Reddit, and Twitch.{' '}
               <Text fontWeight="bold" textColor="green.400" as="span">
                 Lighthouse SEO score : 100
               </Text>
               .
               <br />
-              4- Maintainability :{' '}
+              4- Maintainability:{' '}
               <Text fontWeight="bold" textColor="green.400" as="span">
                 Type safety end-to-end
               </Text>
@@ -123,10 +123,9 @@ const Projects = () => (
                   <Badge colorScheme="teal" mb={1}>
                     Tech{' '}
                   </Badge>{' '}
-                  : Next.js 13.4 with App Router · React · TypeScript · Tailwind
-                  CSS · Shadcn UI · Zod · React Query (Tanstack Query) + Axios ·
-                  React Hook Form · Prisma · MySQL · PlanetScale · Clerk ·
-                  Stripe
+                  : Next.js 13.4 with App Router · React · Node.js · TypeScript
+                  · Tailwind CSS · Shadcn UI · Zod · React Query + Axios · React
+                  Hook Form · Prisma · MySQL · PlanetScale · Clerk · Stripe
                 </div>
               </Flex>
             }
@@ -153,8 +152,9 @@ const Projects = () => (
                   <Badge colorScheme="teal" mb={1}>
                     Tech{' '}
                   </Badge>{' '}
-                  : Next.js 13.2 · React.js · TailwindCSS · Radix UI primitives
-                  · TypeScript · PlanetScale · Prisma · Upstash · NextAuth.js
+                  : Next.js 13.2 · React · Node.js · TailwindCSS · Radix UI
+                  primitives · TypeScript · PlanetScale · Prisma · Upstash ·
+                  NextAuth.js
                 </div>
               </Flex>
             }

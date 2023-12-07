@@ -154,7 +154,7 @@ export const WorkGridItem = ({
         {design && (
           <Link href={design} target="_blank" order={isStartUp ? 6 : 4}>
             <Button size="sm" leftIcon={<IoLogoBehance />} colorScheme="teal">
-              My UI / UX Design
+              My UX / UI Design
             </Button>
           </Link>
         )}

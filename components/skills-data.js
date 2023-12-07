@@ -13,6 +13,10 @@ export const skills = [
         badge: 5
       },
       {
+        name: 'Node.js',
+        level: '8.5'
+      },
+      {
         name: 'TypeScript',
         level: '9'
       },
@@ -107,11 +111,15 @@ export const skills = [
       {
         name: 'tRPC',
         level: '8.5'
+      },
+      {
+        name: 'Cypress',
+        level: '7.5'
       }
     ]
   },
   {
-    name: 'Devops/Cloud',
+    name: 'DevOps/Cloud',
     delay: 0.2,
     data: [
       {
@@ -154,10 +162,6 @@ export const skills = [
         level: '9'
       },
       {
-        name: 'Node.js',
-        level: '8'
-      },
-      {
         name: 'CSS',
         level: '9'
       },
@@ -188,6 +192,10 @@ export const skills = [
         level: '8.5'
       },
       {
+        name: 'E2E Testing',
+        level: '7.5'
+      },
+      {
         name: 'Software Architecture',
         level: '8.5'
       },
@@ -196,7 +204,7 @@ export const skills = [
         level: '9'
       },
       {
-        name: 'UI/UX Design',
+        name: 'UX/UI Design',
         level: '8.5'
       },
       {
