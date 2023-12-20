@@ -45,7 +45,7 @@ const Home = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
         >
-          Hello, I'm a full-stack web developer based in Tunis, Tunisia.
+          Hello, I'm a full-stack software engineer based in Tunis, Tunisia.
           <br />
         </Box>
 
@@ -68,7 +68,7 @@ const Home = () => {
               .
             </p>
             <p style={{ marginTop: '4px' }}>
-              • Planning a mendatory six-month end-of-study internship starting
+              • Planning a mendatory 6-month end-of-study internship starting
               anytime after I’ll have completed my studies on 13/01/2024.
             </p>
             {/* <p style={{ marginTop: '4px' }}>
@@ -179,7 +179,7 @@ const Home = () => {
                 XQuant - Seoul, South Korea
               </Button>
             </Link>
-            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Web Developer</p>
+            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
@@ -220,7 +220,7 @@ const Home = () => {
                 EY - Tunis, Tunisia
               </Button>
             </Link>
-            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Web Developer</p>
+            <p>|&nbsp;&nbsp;&nbsp;</p> <p>Full-stack Software Engineer</p>
           </Flex>
 
           <Text mb={2} mt={0.5} fontSize="xs" fontWeight="bold">
@@ -393,7 +393,7 @@ const Home = () => {
               Currently, I’m at my 5th year.{' '}
               <Text as="span" fontWeight={'semibold'} color="green.400">
                 To fulfill my software engineering degree requirements (modeled
-                after the French system), I'm planning a mandatory six-month
+                after the French system), I'm planning a mandatory 6-month
                 end-of-study internship starting anytime after I’ll have
                 completed my studies on 13/01/2024.
               </Text>

@@ -115,6 +115,10 @@ export const skills = [
       {
         name: 'Cypress',
         level: '7.5'
+      },
+      {
+        name: 'Playwright',
+        level: '8'
       }
     ]
   },
@@ -192,7 +196,7 @@ export const skills = [
         level: '8.5'
       },
       {
-        name: 'E2E Testing',
+        name: 'Testing & TDD',
         level: '7.5'
       },
       {
