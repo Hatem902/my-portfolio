@@ -7,7 +7,7 @@ import { useState } from 'react'
 import Skill from '../components/skill'
 
 const SkillSection = ({ delay, name, data }) => {
-  const [show, setShow] = useState(name == 'My core tech stack' ? true : false)
+  const [show, setShow] = useState(name == 'Key Skills' ? true : false)
   const handleToggle = () => setShow(!show)
   return (
     <Section delay={delay}>

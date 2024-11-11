@@ -62,7 +62,7 @@ const Navbar = props => {
       encodeURIComponent(body) || ''
     }`
   }
-  const mailMe = mailTo('hatemlaminee@gmail.com', 'Subject💡', 'Body 👋')
+  const mailMe = mailTo('hatem.lamine.work@gmail.com', 'Subject💡', 'Body 👋')
   return (
     <Box
       position="fixed"
@@ -96,10 +96,10 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/skills" path={path}>
-            Tech Stack
+            Skills
           </LinkItem>
-          <LinkItem href="/projects" path={path}>
-            Projects
+          <LinkItem href="/projects-and-freelance" path={path}>
+            Projects & Freelance
           </LinkItem>
           <Spacer />
           <LinkItem
@@ -156,10 +156,10 @@ const Navbar = props => {
                   <MenuItem as={Link}>Profile</MenuItem>
                 </NextLink>
                 <NextLink href="/skills" passHref>
-                  <MenuItem as={Link}>Tech Stack</MenuItem>
+                  <MenuItem as={Link}>Skills</MenuItem>
                 </NextLink>
-                <NextLink href="/projects" passHref>
-                  <MenuItem as={Link}>Projects</MenuItem>
+                <NextLink href="/projects-and-freelance" passHref>
+                  <MenuItem as={Link}>Projects & Freelance</MenuItem>
                 </NextLink>
 
                 <MenuItem as={Link} href={mailMe} target="_blank">

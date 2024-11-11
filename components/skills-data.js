@@ -1,294 +1,92 @@
 export const skills = [
   {
-    name: 'Full-stack',
+    name: 'Key Skills',
     delay: 0.1,
     data: [
-      {
-        name: 'Next.js',
-        level: '9'
-      },
-      {
-        name: 'React.js',
-        level: '8.5',
-        badge: 5
-      },
-      {
-        name: 'Node.js',
-        level: '8.5'
-      },
-      {
-        name: 'TypeScript',
-        level: '9'
-      },
-      {
-        name: 'React Query + Axios',
-        level: '9'
-      },
-      {
-        name: 'Zustand/Jotai',
-        level: '8.5'
-      },
-      {
-        name: 'Tailwind CSS',
-        level: '9'
-      },
-      {
-        name: 'Radix UI',
-        level: '8'
-      },
-      {
-        name: 'Shadcn UI',
-        level: '9'
-      },
-      {
-        name: 'React Portals',
-        level: '7.5'
-      },
-      {
-        name: 'MySQL',
-        level: '8'
-      },
-      {
-        name: 'Redis',
-        level: '8'
-      },
-      {
-        name: 'PostgreSQL',
-        level: '8'
-      },
-      {
-        name: 'PlanetScale',
-        level: '8.5'
-      },
-      {
-        name: 'UpStash',
-        level: '8.5'
-      },
-      {
-        name: 'Drizzle ORM',
-        level: '8.5'
-      },
-      {
-        name: 'Prisma',
-        level: '8'
-      },
-      {
-        name: 'NextAuth',
-        level: '8.5'
-      },
-      {
-        name: 'Clerk',
-        level: '8.5'
-      },
-      {
-        name: 'Stripe',
-        level: '8'
-      },
-      {
-        name: 'React Hook Forms',
-        level: '9'
-      },
-      {
-        name: 'Zod',
-        level: '9'
-      },
-      {
-        name: 'Payload CMS',
-        level: '5'
-      },
-      {
-        name: 'NoSQL',
-        level: '8'
-      },
-      {
-        name: 'MongoDB',
-        level: '8'
-      },
-      {
-        name: 'Express',
-        level: '7.5'
-      },
-      {
-        name: 'tRPC',
-        level: '8.5'
-      },
-      {
-        name: 'Cypress',
-        level: '7.5'
-      },
-      {
-        name: 'Playwright',
-        level: '8'
-      }
+      { name: 'Problem Solving', level: 8.5 },
+      { name: 'Software Architecture', level: 8 },
+      { name: 'Data Modeling', level: 8.5 },
+      { name: 'Product and Feature Design', level: 8.5 },
+      { name: 'Back-end Development', level: 8.5 },
+      { name: 'Front-end Development', level: 8.5 },
+      { name: 'UX/UI Design & Development', level: 8.5 },
+      { name: 'Performance Optimization', level: 9 },
+      { name: 'Testing', level: 8 },
+      { name: 'DevOps', level: 8 }
     ]
   },
   {
-    name: 'DevOps/Cloud',
+    name: 'Full Stack Development',
     delay: 0.2,
     data: [
-      {
-        name: 'Docker',
-        level: '8'
-      },
-      {
-        name: 'Kubernetes',
-        level: '6.5'
-      },
-      {
-        name: 'Jenkins',
-        level: '7'
-      },
-      {
-        name: 'AWS',
-        level: '7'
-      },
-      {
-        name: 'Azure',
-        level: '7'
-      },
-      {
-        name: 'Vercel',
-        level: '9'
-      }
+      { name: 'Next.js', level: 9 },
+      { name: 'React', level: 9, badge: 5 },
+      { name: 'SvelteKit', level: 9 },
+      { name: 'Nuxt.js', level: 7 },
+      { name: 'Angular', level: 8 },
+      { name: 'Express.js', level: 8.5 },
+      { name: 'FastAPI', level: 8 },
+      { name: 'Django', level: 8.5 },
+      { name: 'Spring Boot', level: 7.5 },
+      { name: 'Figma', level: 8.5 },
+      { name: 'MySQL', level: 9 },
+      { name: 'PostgreSQL', level: 9 },
+      { name: 'Redis', level: 9 },
+      { name: 'UpStash', level: 8.5 },
+      { name: 'NoSQL', level: 8.5 },
+      { name: 'MongoDB', level: 8.5 },
+      { name: 'Microservices', level: 8.5 },
+      { name: 'WebSockets', level: 8.5 },
+      { name: 'Socket.io', level: 8.5 },
+      { name: 'Keycloak', level: 9 },
+      { name: 'GraphQL', level: 8 },
+      { name: 'Apollo Client', level: 8 },
+      { name: 'Hasura', level: 8.5 },
+      { name: 'Tailwind CSS', level: 9 },
+      { name: 'TanStack', level: 8.5 },
+      { name: 'Zod', level: 9 },
+      { name: 'Shadcn UI', level: 8.5 },
+      { name: 'Stripe', level: 8.5 },
+      { name: 'React Native', level: 8 },
+      { name: 'Expo', level: 8 },
+      { name: 'Cypress', level: 8 },
+      { name: 'Selenium', level: 8 },
+      { name: 'Microservices Architecture', level: 8.5 },
+      { name: 'Service Workers', level: 8 },
+      { name: 'TensorFlow', level: 4 },
+      { name: 'Grafana', level: 6.5 },
+      { name: 'Prometheus', level: 6 }
     ]
   },
   {
-    name: 'Basics',
+    name: 'DevOps & Cloud',
     delay: 0.3,
     data: [
-      {
-        name: 'JavaScript',
-        level: '9',
-        badge: 30
-      },
-      {
-        name: 'TypeScript',
-        level: '9'
-      },
-      {
-        name: 'CSS',
-        level: '9'
-      },
-      {
-        name: 'HTML',
-        level: '9'
-      },
-      {
-        name: 'Git',
-        level: '9'
-      }
+      { name: 'Git', level: 9 },
+      { name: 'Docker', level: 9 },
+      { name: 'GitHub Actions', level: 8 },
+      { name: 'Kubernetes', level: 7 },
+      { name: 'Jenkins', level: 5 },
+      { name: 'Flux', level: 7 },
+      { name: 'AWS EC2', level: 7 },
+      { name: 'Azure', level: 7 },
+      { name: 'Cloudflare', level: 8 },
+      { name: 'Vercel', level: 8 },
+      { name: 'Sentry', level: 7 }
     ]
   },
   {
-    name: 'Concepts',
+    name: 'Languages',
     delay: 0.4,
     data: [
-      {
-        name: 'Performance Optimization',
-        level: '9'
-      },
-      {
-        name: 'Queries & Caching',
-        level: '9'
-      },
-      {
-        name: 'Error Handling',
-        level: '8.5'
-      },
-      {
-        name: 'Testing & TDD',
-        level: '7.5'
-      },
-      {
-        name: 'Software Architecture',
-        level: '8.5'
-      },
-      {
-        name: 'HTTP/APIs/REST',
-        level: '9'
-      },
-      {
-        name: 'UX/UI Design',
-        level: '8.5'
-      },
-      {
-        name: 'Cross-Browser Compatibility',
-        level: '9'
-      },
-      {
-        name: 'SEO',
-        level: '9'
-      },
-      {
-        name: 'Algorithms & Data Structures',
-        level: '8.5'
-      },
-      {
-        name: 'Design Patterns & GOF',
-        level: '9'
-      }
-    ]
-  },
-  {
-    name: "Other tech I've used in the past",
-    delay: 0.5,
-    data: [
-      {
-        name: 'Astro',
-        level: '8'
-      },
-      {
-        name: 'Angular',
-        level: '7.5'
-      },
-      {
-        name: 'Vue.js 3',
-        level: '8'
-      },
-      {
-        name: 'Nuxt.js 3',
-        level: '8'
-      },
-      {
-        name: 'SupaBase',
-        level: '8'
-      },
-      {
-        name: 'Framer Motion',
-        level: '8.5'
-      },
-      {
-        name: 'Svelte Kit',
-        level: '5.5'
-      },
-      {
-        name: 'Nest.js',
-        level: '7.5'
-      },
-      {
-        name: 'Figma',
-        level: '8'
-      },
-      {
-        name: 'Recoil / Redux / Context API',
-        level: '8.5'
-      },
-      {
-        name: 'Chakra UI / Ant Design / MUI / Mantine UI',
-        level: '8.5'
-      },
-      {
-        name: 'Three.js',
-        level: '5'
-      },
-      {
-        name: 'Java',
-        level: '5.5'
-      },
-      {
-        name: 'Python',
-        level: '7'
-      }
+      { name: 'JavaScript', level: 9, badge: 30 },
+      { name: 'TypeScript', level: 9 },
+      { name: 'CSS', level: 9 },
+      { name: 'HTML', level: 9 },
+      { name: 'SQL', level: 9 },
+      { name: 'Python', level: 8.5 },
+      { name: 'Java (OOP)', level: 7 },
+      { name: 'C++', level: 7 }
     ]
   }
 ]

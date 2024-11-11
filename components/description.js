@@ -12,7 +12,7 @@ const Description = ({ shownContent, hiddenContent }) => {
           {contentItem}
         </Text>
       ))}
-      {hiddenContent && (
+      {hiddenContent ? (
         <>
           <Collapse startingHeight={0} in={show}>
             {hiddenContent.map(contentItem => (
@@ -50,6 +50,8 @@ const Description = ({ shownContent, hiddenContent }) => {
             </Center>
           </>
         </>
+      ) : (
+        <Divider mb={3.5} mt={3} />
       )}
     </Text>
   )

@@ -63,7 +63,8 @@ export const WorkGridItem = ({
   design,
   tech,
   isStartUp,
-  webVitals
+  webVitals,
+  demoPrio
 }) => {
   const [show, setShow] = useState(false)
   const handleToggle = () => setShow(!show)
@@ -78,7 +79,7 @@ export const WorkGridItem = ({
           opacity: '72%'
         }}
       >
-        <LinkOverlay href={demo || link} target="_blank">
+        <LinkOverlay href={demoPrio? demo : link || demo} target="_blank">
           <Image
             src={thumbnail}
             alt={title}

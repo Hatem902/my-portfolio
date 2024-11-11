@@ -7,19 +7,8 @@ import SkillSection from '../components/skill-section'
 
 const Skills = () => (
   <Layout title="Skills">
-    <Container>
-      <div>
-        {skills.map(skill => (
-          <SkillSection
-            delay={skill.delay}
-            name={skill.name}
-            data={skill.data}
-            key={skill.name}
-          />
-        ))}
-      </div>
-
-      <Center mb={3} mt={16}>
+    <Container mb={14}>
+      <Center mt={4} mb={8}>
         <Badge fontSize="sm" colorScheme="red">
           Proficient
         </Badge>
@@ -30,6 +19,16 @@ const Skills = () => (
           Familiar
         </Badge>
       </Center>
+      <div>
+        {skills.map(skill => (
+          <SkillSection
+            delay={skill.delay}
+            name={skill.name}
+            data={skill.data}
+            key={skill.name}
+          />
+        ))}
+      </div>
     </Container>
   </Layout>
 )
