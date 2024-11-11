@@ -120,34 +120,48 @@ const Home = () => {
         </Box>
 
         <Section delay={0.1}>
-          <Heading as="h3" mt={6} variant="section-title">
+          <Heading as="h3" mt={10} variant="section-title">
             Current Work & Education Status
           </Heading>
           <Paragraph>
-            Currently, I'am pursuing a Master’s degree (M2) in Computer Science
-            - Software Engineering track, at ISIMA Clermont Auvergne INP in
-            Clermont-Ferrand, France, as part of my{' '}
-            <Text as="span" color="green.400" fontWeight={'semibold'}>
-              dual degree
-            </Text>{' '}
-            in software engineering, and with an expected graduation date of
-            September 2025.
-            <br />
-            Simultaneously, I am{' '}
-            <Text as="span" color="green.400" fontWeight={'semibold'}>
-              {' '}
-              working part-time
-            </Text>{' '}
-            remotely at Inthy (Paris, France), where I previously completed a
-            6-month end-of-study internship. Successfully defending this
-            internship concluded my 5 years at INSAT (National Institute of
-            Applied Sciences and Technology) in Tunis, Tunisia, and culminated
-            in my graduation with a{' '}
-            <Text as="span" color="green.400" fontWeight={'semibold'}>
-              National Engineering Degree in Software Engineering with the
-              highest honors
+            <Text pt={1}>
+              <Text as={'span'} fontWeight={'bold'} mr={'1'}>
+                1.
+              </Text>{' '}
+              Currently pursuing a Master’s degree (M2) in Computer Science -
+              Software Engineering track, at ISIMA Clermont Auvergne INP in
+              Clermont-Ferrand, France, as part of my{' '}
+              <Text as="span" color="green.400" fontWeight={'semibold'}>
+                dual degree
+              </Text>{' '}
+              in software engineering, and with an expected graduation date of
+              September 2025.
             </Text>
-            , at INSAT in September 2024.
+
+            <Text mt={3}>
+              <Text as={'span'} fontWeight={'bold'} mr={'1'}>
+                2.
+              </Text>{' '}
+              <Text as="span" color="green.400" fontWeight={'semibold'}>
+                {' '}
+                Working part-time
+              </Text>{' '}
+              in parallel, as a Full-Stack Software Engineer, remotely at Inthy
+              (Paris, France), where I previously completed my 6-month
+              end-of-study internship.
+            </Text>
+            <Text mt={3}>
+              <Text as={'span'} fontWeight={'bold'} mr={'1'}>
+                3.
+              </Text>{' '}
+              Graduated with a{' '}
+              <Text as="span" color="green.400" fontWeight="semibold">
+                National Engineering Degree in Software Engineering with the
+                highest honors
+              </Text>{' '}
+              from the engineering school INSAT (National Institute of Applied
+              Sciences and Technology) in Tunis, Tunisia, in September 2024.
+            </Text>
           </Paragraph>
 
           {/* <Description
