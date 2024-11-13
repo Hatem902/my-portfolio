@@ -53,6 +53,7 @@ export const skills = [
       { name: 'Selenium', level: 8 },
       { name: 'Microservices Architecture', level: 8.5 },
       { name: 'Service Workers', level: 8 },
+      { name: 'Linux', level: 7 },
       { name: 'TensorFlow', level: 4 },
       { name: 'Grafana', level: 6.5 },
       { name: 'Prometheus', level: 6 }

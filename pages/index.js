@@ -4,7 +4,6 @@ import {
   Box,
   Button,
   Container,
-  Divider,
   Flex,
   Heading,
   Link,
@@ -192,9 +191,9 @@ const Home = () => {
             <Badge colorScheme="teal" mb={1}>
               Tech:{' '}
             </Badge>{' '}
-            Next.js · React · Node.js · Django · Figma · Docker · PostgreSQL ·
-            Keycloak · Hasura · Apollo Client · GraphQL · Leaflet.js · Cypress ·
-            Stripe · Cloudflare · Linear
+            Next.js · React · Node.js · TS · Django · Figma · Docker ·
+            PostgreSQL · Keycloak · Hasura · Apollo Client · GraphQL ·
+            Leaflet.js · Cypress · Stripe · Cloudflare · Linear
           </Text>
           <Description
             shownContent={[
@@ -222,8 +221,8 @@ const Home = () => {
             <Badge colorScheme="teal" mb={1}>
               Tech:{' '}
             </Badge>{' '}
-            SvelteKit · Next.js · Node.js · React · React Native · Expo · Figma
-            · Express · FastAPI · PostgreSQL · Socket.io · Docker · Github
+            SvelteKit · Next.js · Node.js · React · React Native · Expo · TS ·
+            Figma · Express · FastAPI · PostgreSQL · Socket.io · Docker · Github
             Actions · Kubernetes · AWS EC2 · Flux · Selenium
           </Text>
           <Description
@@ -233,7 +232,7 @@ const Home = () => {
             ]}
             hiddenContent={[
               '• Implemented Rate Limiting to protect accounts from Brute Force attacks',
-              '• Proposed and implemented an infinite scrolling solution for the transactions history feature, resulting in a 600% performance increase, through transforming an initial 3+ seconds loading time into unnoticeable 50ms loading times as the user scrolls down.',
+              '• Proposed and implemented an infinite scrolling solution for the notifications history feature, resulting in a 600% performance increase, through transforming an initial 3+ seconds loading time into unnoticeable 50ms loading times as the user scrolls down.',
               '• Contributed to the DevOps team’s setup of a CI/CD pipeline using Docker, GitHub Actions, Kubernetes, AWS EC2, Flux, as well as regression tests using Selenium.'
             ]}
           />
@@ -253,8 +252,11 @@ const Home = () => {
             <Badge colorScheme="teal" mb={1}>
               Tech:{' '}
             </Badge>{' '}
-            Angular · PostgreSQL · Docker · Microservices · Sentry · Figma ·
-            Service Workers · Spring Boot · Grafana · Prometheus · TensorFlow
+            Angular · TS · PostgreSQL · Docker · Microservices · Sentry · Figma
+            · Service Workers · Spring Boot · Grafana · Prometheus · TensorFlow
+            ·
+            <br />
+            Google Analytics 360 · Linux
           </Text>
           <Description
             shownContent={[
