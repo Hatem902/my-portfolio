@@ -151,7 +151,7 @@ const Projects = () => (
               </Flex>
             }
           >
-            Full-stack E-Commerce + Dashboard & CMS App. Feature-packed with :
+            Full-Stack E-Commerce + Dashboard & CMS App. Feature-packed with :
             Admin Dashboard exposing statistics such as total revenue, sales,
             products in stock, and more... | Highly Customizable CMS |
             Multi-platform Image Uploading | Orders history & logs |
@@ -174,7 +174,7 @@ const Projects = () => (
                     Tech:{' '}
                   </Badge>{' '}
                   Next.js · React · TypeScript · TailwindCSS ·<br />{' '}
-                  Unopinionated Radix UI primitives · Upstash · NextAuth
+                  Unopinionated Radix UI primitives · Upstash · Auth.js
                 </div>
               </Flex>
             }
@@ -215,7 +215,7 @@ const Projects = () => (
                   >
                     Official Spotify API
                   </Link>{' '}
-                  · NextAuth · OAuth & JWT
+                  · Auth.js · OAuth & JWT · Framer Motion
                 </div>
               </Flex>
             }
@@ -309,8 +309,8 @@ const Projects = () => (
                     Tech:{' '}
                   </Badge>{' '}
                   Angular · TailwindCSS · TypeScript ·
-                  <br/>FastAPI · Python · Azure
-                  Storage
+                  <br />
+                  FastAPI · Python · Azure Storage
                 </div>
               </Flex>
             }

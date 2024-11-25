@@ -80,7 +80,7 @@ const Home = () => {
               Hatem Lamine
             </Heading>
             <Text as={'span'} mt={2} font>
-              Full-stack software engineer
+              Full-Stack software engineer
             </Text>
 
             {/* <Link
@@ -133,8 +133,7 @@ const Home = () => {
               <Text as="span" color="green.400" fontWeight={'semibold'}>
                 dual degree
               </Text>{' '}
-              in software engineering, and with an expected graduation date of
-              September 2025.
+              in software engineering. (Graduation year: 2025)
             </Text>
 
             <Text mt={3}>
@@ -147,7 +146,7 @@ const Home = () => {
               </Text>{' '}
               in parallel, as a Full-Stack Software Engineer, remotely at Inthy
               (Paris, France), where I previously completed my 6-month
-              end-of-study internship.
+              end-of-studies internship.
             </Text>
             <Text mt={3}>
               <Text as={'span'} fontWeight={'bold'} mr={'1'}>
@@ -177,7 +176,7 @@ const Home = () => {
           </Heading>
 
           <Flex fontWeight="bold" alignItems="center" pt={1.5}>
-            Full-stack Software Engineer
+            Full-Stack Software Engineer
           </Flex>
           <Text color={'blue.400'} fontWeight="semibold">
             Inthy (Paris, France) · 03/2024 - ongoing
@@ -207,7 +206,7 @@ const Home = () => {
           />
 
           <Flex fontWeight="bold" alignItems="center" pt={2}>
-            Full-stack Software Engineer
+            Full-Stack Software Engineer
           </Flex>
           <Text color={'blue.400'} fontWeight="semibold">
             XQuant (Seoul, South Korea) · 06/2023 - 03/2024
@@ -231,7 +230,7 @@ const Home = () => {
               '• Implemented Database indexing, partitioning, and views, resulting in 300% faster database queries.'
             ]}
             hiddenContent={[
-              '• Implemented Rate Limiting to protect accounts from Brute Force attacks',
+              '• Implemented Rate Limiting to prevent Denial of Service attacks and protect accounts from Brute Force attacks.',
               '• Proposed and implemented an infinite scrolling solution for the notifications history feature, resulting in a 600% performance increase, through transforming an initial 3+ seconds loading time into unnoticeable 50ms loading times as the user scrolls down.',
               '• Contributed to the DevOps team’s setup of a CI/CD pipeline using Docker, GitHub Actions, Kubernetes, AWS EC2, Flux, as well as regression tests using Selenium.'
             ]}
@@ -260,11 +259,11 @@ const Home = () => {
           </Text>
           <Description
             shownContent={[
-              '• Worked within a Microserices Architecture on CTP (EY’s Client Technology Platform): designed optimal data structures and models, set up APIs, and carefully developed and tested a refined, detailed, and responsive UX/UI with guidance from the UX/UI design team.'
+              '• Worked within a Microservices Architecture on CTP (EY’s Client Technology Platform): designed optimal data structures and models, set up APIs, and carefully developed and tested a refined, detailed, and responsive UX/UI using EY’s Design System with guidance from the UX/UI design team.'
             ]}
             hiddenContent={[
               '• Implemented Service Workers for push notifications.',
-              '• Explored Machine Learning with TensorFlow, Data Monitoring with Grafana and Prometheus, Error Management with Sentry, User Analytics using Google Analytics 360, as well as Linux.'
+              '• Explored Machine Learning with TensorFlow, Data Monitoring with Grafana and Prometheus, Error Management with Sentry, User Analytics using Google Analytics 360, as well as the Linux environment.'
             ]}
           />
           <Flex fontWeight="bold" alignItems="center" pt={2}>
@@ -318,7 +317,7 @@ const Home = () => {
             </Text>{' '}
             (Higher Institute of Computer Science, Modeling, and Applications) ·
             Clermont-Ferrand, France · 2024 – 2025. Dual degree in
-            SW.Engineering expected by 09/2025.
+            SW.Engineering expected in 2025.
           </Text>
 
           <Flex fontWeight="bold" alignItems="center" pt={4}>
@@ -338,7 +337,7 @@ const Home = () => {
 
           <Text mt={0.5} mb={2}>
             <Text as={'span'} fontWeight={'semibold'} color={'blue.400'}>
-              Pioneer High School{' '}
+              Pioneer High School of Nabeul{' '}
             </Text>
             , an Elite high school (admission based on a national exam) ·
             Nabeul, Tunisia · 2015 – 2019

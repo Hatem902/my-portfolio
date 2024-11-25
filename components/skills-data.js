@@ -29,7 +29,7 @@ export const skills = [
       { name: 'Django', level: 8.5 },
       { name: 'Spring Boot', level: 7.5 },
       { name: 'Figma', level: 8.5 },
-      { name: 'MySQL', level: 9 },
+      { name: 'MySQL', level: 9, badge: 5 },
       { name: 'PostgreSQL', level: 9 },
       { name: 'Redis', level: 9 },
       { name: 'UpStash', level: 8.5 },
@@ -77,17 +77,32 @@ export const skills = [
     ]
   },
   {
-    name: 'Languages',
+    name: 'Programming & Markup Languages',
     delay: 0.4,
     data: [
-      { name: 'JavaScript', level: 9, badge: 30 },
+      { name: 'JavaScript', level: 9, badge: 5 },
       { name: 'TypeScript', level: 9 },
       { name: 'CSS', level: 9 },
       { name: 'HTML', level: 9 },
       { name: 'SQL', level: 9 },
       { name: 'Python', level: 8.5 },
-      { name: 'Java (OOP)', level: 7 },
+      { name: 'Java', level: 7 },
       { name: 'C++', level: 7 }
+    ]
+  },
+  {
+    name: 'Soft Skills',
+    delay: 0.5,
+    data: [
+      { name: 'Initiative', level: 9 },
+      { name: 'Feedback Exchange', level: 8.5 },
+      { name: 'Sharing Ideas', level: 8 },
+      { name: 'Learning', level: 9 },
+      { name: 'Work Visibility', level: 8 },
+      { name: 'Clear Communication', level: 8.5 },
+      { name: 'Teamwork', level: 9 },
+      { name: 'Adaptability', level: 8 },
+      { name: 'Critical Thinking', level: 8.5 }
     ]
   }
 ]
