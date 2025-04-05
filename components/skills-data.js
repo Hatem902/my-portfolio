@@ -4,14 +4,15 @@ export const skills = [
     delay: 0.1,
     data: [
       { name: 'Problem Solving', level: 8.5 },
+      { name: 'Data Structures and Algorithms', level: 8.5 },
       { name: 'Software Architecture', level: 8 },
       { name: 'Data Modeling', level: 8.5 },
-      { name: 'Product and Feature Design', level: 8.5 },
       { name: 'Back-end Development', level: 8.5 },
       { name: 'Front-end Development', level: 8.5 },
       { name: 'UX/UI Design & Development', level: 8.5 },
       { name: 'Performance Optimization', level: 9 },
       { name: 'Testing', level: 8 },
+      { name: 'Cloud', level: 7 },
       { name: 'DevOps', level: 8 }
     ]
   },

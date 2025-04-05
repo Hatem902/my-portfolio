@@ -114,7 +114,7 @@ const Navbar = props => {
             <IoMailOpen />
             Contact
           </LinkItem>
-          <LinkItem
+          {/* <LinkItem
             href="#"
             path={path}
             display="inline-flex"
@@ -125,7 +125,7 @@ const Navbar = props => {
           >
             <IoDownloadOutline />
             Resume
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem
             target="_blank"
             href="https://github.com/Hatem902/my-portfolio"
@@ -172,9 +172,9 @@ const Navbar = props => {
                 >
                   View Source
                 </MenuItem>
-                <MenuItem as={Link} href="#" onClick={downloadResume}>
+                {/* <MenuItem as={Link} href="#" onClick={downloadResume}>
                   Resume
-                </MenuItem>
+                </MenuItem> */}
               </MenuList>
             </Menu>
           </Box>

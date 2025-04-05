@@ -44,7 +44,7 @@ const Home = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
         >
-          Welcome! I’m Hatem Lamine, based in France, and I’m excited to share
+          Welcome! I’m Hatem Lamine, based in France, and I’m delighted to share
           my education and work experiences with you.
           <br />
         </Box>
@@ -127,38 +127,41 @@ const Home = () => {
               <Text as={'span'} fontWeight={'bold'} mr={'1'}>
                 1.
               </Text>{' '}
-              Currently pursuing a Master’s degree (M2) in Computer Science -
-              Software Engineering track, at ISIMA Clermont Auvergne INP in
-              Clermont-Ferrand, France, as part of my{' '}
-              <Text as="span" color="green.400" fontWeight={'semibold'}>
-                dual degree
+              Currently carrying out a 6-month end-of-study{' '}
+              <Text as="span" color="green.400" fontWeight="semibold">
+                internship
               </Text>{' '}
-              in software engineering. (Graduation year: 2025)
+              in software engineering at Dassault Systèmes, located in
+              Vélizy-Villacoublay, Île-de-France, France. This is part of my
+              Master’s degree (M2) in Computer Science – Software Engineering
+              track at ISIMA, Clermont Auvergne INP.
             </Text>
 
             <Text mt={3}>
               <Text as={'span'} fontWeight={'bold'} mr={'1'}>
                 2.
               </Text>{' '}
+              This Master’s program is part of my{' '}
               <Text as="span" color="green.400" fontWeight={'semibold'}>
-                {' '}
-                Working part-time
+                dual degree
               </Text>{' '}
-              in parallel, as a Full-Stack Software Engineer, remotely at Inthy
-              (Paris, France), where I previously completed my 6-month
-              end-of-studies internship.
+              in software engineering, with an expected graduation in 2025.
             </Text>
+
             <Text mt={3}>
               <Text as={'span'} fontWeight={'bold'} mr={'1'}>
                 3.
               </Text>{' '}
               Graduated with a{' '}
               <Text as="span" color="green.400" fontWeight="semibold">
-                National Engineering Degree in Software Engineering with the
-                highest honors
+                National Engineering Degree in Software Engineering
               </Text>{' '}
-              from the engineering school INSAT (National Institute of Applied
-              Sciences and Technology) in Tunis, Tunisia, in September 2024.
+              (Master’s degree equivalent){' '}
+              <Text as="span" color="green.400" fontWeight="semibold">
+                with the highest honors
+              </Text>{' '}
+              from the National Institute of Applied Sciences and Technology
+              (INSAT) in Tunis, Tunisia, in September 2024.
             </Text>
           </Paragraph>
 
@@ -174,15 +177,29 @@ const Home = () => {
           <Heading as="h3" variant="section-title" mt={10}>
             Experience
           </Heading>
+          <Flex fontWeight="bold" alignItems="center" pt={1.5}>
+            Full-Stack Software Engineer
+          </Flex>
+          <Text color={'blue.400'} fontWeight="semibold">
+            Dassault Systèmes (Île-de-France) · 04/2025 - 09/2025 (ongoing)
+          </Text>
+          <Text mb={3} mt={0.5} fontSize="xs" fontWeight="bold">
+            (6 months on-site end-of-study internship, for dual degree)
+          </Text>
+          <Description
+            shownContent={[
+              '• Subject: Design and full-stack web development of an AI-powered media production assistant.'
+            ]}
+          />
 
           <Flex fontWeight="bold" alignItems="center" pt={1.5}>
             Full-Stack Software Engineer
           </Flex>
           <Text color={'blue.400'} fontWeight="semibold">
-            Inthy (Paris, France) · 03/2024 - ongoing
+            Inthy (Paris, France) · 04/2024 - 03/2025
           </Text>
           <Text mb={3} mt={0.5} fontSize="xs" fontWeight="bold">
-            (6 months on-site end-of-study internship then 3 months part-time as
+            (6 months on-site end-of-study internship then 6 months part-time as
             an M2 student)
           </Text>
 
@@ -212,7 +229,7 @@ const Home = () => {
             XQuant (Seoul, South Korea) · 06/2023 - 03/2024
           </Text>
           <Text mb={3} mt={0.5} fontSize="xs" fontWeight="bold">
-            (3 months on-site internship, 6 months part-time remote as
+            (3 months on-site internship, 7 months part-time remote as
             SW.Engineering student)
           </Text>
 
@@ -240,7 +257,7 @@ const Home = () => {
             Software Engineer
           </Flex>
           <Text color={'blue.400'} fontWeight="semibold">
-            EY (Tunis, Tunisia) · 06/2022 - 06/2023
+            EY (Tunis, Tunisia) · 06/2022 - 05/2023
           </Text>
           <Text mb={3} mt={0.5} fontSize="xs" fontWeight="bold">
             (3 months on-site internship, then, 9 months on-site as a working
