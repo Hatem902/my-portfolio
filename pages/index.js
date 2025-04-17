@@ -178,17 +178,28 @@ const Home = () => {
             Experience
           </Heading>
           <Flex fontWeight="bold" alignItems="center" pt={1.5}>
-            Full-Stack Software Engineer
+            Web Development Engineer
           </Flex>
           <Text color={'blue.400'} fontWeight="semibold">
-            Dassault Systèmes (Île-de-France) · 04/2025 - 09/2025 (ongoing)
+            Dassault Systèmes - 3DEXCITE (Vélizy-Villacoublay) ·<br />
+            04/2025 - 09/2025 (ongoing)
           </Text>
           <Text mb={3} mt={0.5} fontSize="xs" fontWeight="bold">
-            (6 months on-site end-of-study internship, for dual degree)
+            (6 months on-site end-of-study internship, for double degree)
+          </Text>
+          <Text as="div" fontSize={'sm'}>
+            <Badge colorScheme="teal" mb={1}>
+              Tech:{' '}
+            </Badge>{' '}
+            React · Next.js · TypeScript · Tailwind CSS · C++ · Python · PyTorch
+            · LLMs · LangChain · RAG · (potentially Node.js and PostgreSQL) ·
+            and other tech that hasn't been defined as of yet.
           </Text>
           <Description
             shownContent={[
-              '• Subject: Design and full-stack web development of an AI-powered media production assistant.'
+              '• 2 Internship topics:',
+              '1. Front-end & UX/UI improvement of an execution report for the generation of 3D media.',
+              '2. Development of an AI-based assistant tool to support users in generating 3D media.'
             ]}
           />
 
