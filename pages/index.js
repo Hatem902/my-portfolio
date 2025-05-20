@@ -80,7 +80,7 @@ const Home = () => {
               Hatem Lamine
             </Heading>
             <Text as={'span'} mt={2} font>
-              Full-Stack software engineer
+              Full-Stack Software Engineer
             </Text>
 
             {/* <Link
@@ -178,10 +178,10 @@ const Home = () => {
             Experience
           </Heading>
           <Flex fontWeight="bold" alignItems="center" pt={1.5}>
-            Web Development Engineer
+            Full-Stack Software Engineer
           </Flex>
           <Text color={'blue.400'} fontWeight="semibold">
-            Dassault Systèmes - 3DEXCITE (Vélizy-Villacoublay) ·<br />
+            Dassault Systèmes (Vélizy-Villacoublay, France) ·<br />
             04/2025 - 09/2025 (ongoing)
           </Text>
           <Text mb={3} mt={0.5} fontSize="xs" fontWeight="bold">
@@ -192,13 +192,14 @@ const Home = () => {
               Tech:{' '}
             </Badge>{' '}
             React · Next.js · TypeScript · Tailwind CSS · C++ · Python · PyTorch
-            · LLMs · LangChain · RAG · (potentially Node.js and PostgreSQL) ·
-            and other tech that hasn't been defined as of yet.
+            · ML · LLMs · LangChain · RAG · NLP · Fine-Tuning · Reinforcement
+            Learning · Hugging Face · (potentially Node.js, Oracle DB and other
+            tech that haven't been defined as of yet).
           </Text>
           <Description
-            shownContent={[
-              '• 2 Internship topics:',
-              '1. Front-end & UX/UI improvement of an execution report for the generation of 3D media.',
+            shownContent={['• 2 Internship topics:']}
+            hiddenContent={[
+              '1. Web development of a comprehensive dashboard featuring actionable statistics and visualizations (error diagnostics, advanced tables, dynamic charts), serving as an execution report for the generation of a 3D media.',
               '2. Development of an AI-based assistant tool to support users in generating 3D media.'
             ]}
           />
