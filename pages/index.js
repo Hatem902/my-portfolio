@@ -132,36 +132,29 @@ const Home = () => {
                 internship
               </Text>{' '}
               in software engineering at Dassault Systèmes, located in
-              Vélizy-Villacoublay, Île-de-France, France. This is part of my
-              Master’s degree (M2) in Computer Science – Software Engineering
-              track at ISIMA, Clermont Auvergne INP.
+              Vélizy-Villacoublay, Île-de-France, France. This is part of my{' '}
+              <Text as="span" color="green.400" fontWeight="semibold">
+                second degree
+              </Text>{' '}
+              (Master’s degree, M2) in Computer Science – Software Engineering
+              and Software Architecture track at ISIMA, National Polytechnic
+              Institute (INP) Clermont Auvergne.
             </Text>
 
             <Text mt={3}>
               <Text as={'span'} fontWeight={'bold'} mr={'1'}>
                 2.
               </Text>{' '}
-              This Master’s program is part of my{' '}
-              <Text as="span" color="green.400" fontWeight={'semibold'}>
-                dual degree
-              </Text>{' '}
-              in software engineering, with an expected graduation in 2025.
-            </Text>
-
-            <Text mt={3}>
-              <Text as={'span'} fontWeight={'bold'} mr={'1'}>
-                3.
-              </Text>{' '}
               Graduated with a{' '}
               <Text as="span" color="green.400" fontWeight="semibold">
                 National Engineering Degree in Software Engineering
-              </Text>{' '}
-              (Master’s degree equivalent){' '}
+              </Text>
+              ,{' '}
               <Text as="span" color="green.400" fontWeight="semibold">
                 with the highest honors
-              </Text>{' '}
-              from the National Institute of Applied Sciences and Technology
-              (INSAT) in Tunis, Tunisia, in September 2024.
+              </Text>
+              , from the National Institute of Applied Sciences and Technology
+              (INSAT engineering school) in Tunis, Tunisia, in September 2024.
             </Text>
           </Paragraph>
 
@@ -185,7 +178,8 @@ const Home = () => {
             04/2025 - 09/2025 (ongoing)
           </Text>
           <Text mb={3} mt={0.5} fontSize="xs" fontWeight="bold">
-            (6 months on-site end-of-study internship, for double degree)
+            (6 months on-site end-of-study internship, as part of my second
+            degree)
           </Text>
           <Text as="div" fontSize={'sm'}>
             <Badge colorScheme="teal" mb={1}>
@@ -336,17 +330,15 @@ const Home = () => {
           </Heading>
 
           <Flex fontWeight="bold" alignItems="center" pt={1}>
-            Master’s degree (M2) in Computer Science, Software Engineering track
-            (Dual Degree)
+            Master’s degree (M2) in Computer Science, Software Engineering and
+            Software Architecture track (Second Degree)
           </Flex>
 
           <Text mt={0.5} mb={2}>
             <Text as={'span'} fontWeight={'semibold'} color={'blue.400'}>
-              ISIMA Clermont Auvergne INP{' '}
+              ISIMA, National Polytechnic Institute (INP) Clermont Auvergne
             </Text>{' '}
-            (Higher Institute of Computer Science, Modeling, and Applications) ·
-            Clermont-Ferrand, France · 2024 – 2025. Dual degree in
-            SW.Engineering expected in 2025.
+            · Aubière, Clermont-Ferrand, France · 2024 – 2025.
           </Text>
 
           <Flex fontWeight="bold" alignItems="center" pt={4}>
@@ -355,10 +347,9 @@ const Home = () => {
 
           <Text mt={0.5} mb={2}>
             <Text as={'span'} fontWeight={'semibold'} color={'blue.400'}>
-              INSAT{' '}
+              INSAT (National Institute of Applied Sciences and Technology)
             </Text>{' '}
-            (National Institute of Applied Sciences and Technology) · Tunis,
-            Tunisia · 2019 – 2024
+            · Tunis, Tunisia · 2019 – 2024
           </Text>
           <Flex fontWeight="bold" alignItems="center" pt={4}>
             Baccalaureate Diploma in Mathematics (Highest Honors)
@@ -401,7 +392,7 @@ const Home = () => {
               {' '}
               design
             </Link>
-            , video-editing, hiking, journaling, working out.
+            , video-editing, hiking, journaling, bodybuilding.
           </Paragraph>
         </Section>
 
